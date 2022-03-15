@@ -22,9 +22,7 @@ import lombok.NoArgsConstructor;
 @Document
 public class Cne implements Serializable {
 	@Id
-	private Long id ;
-
-	private String numero;
+	private String codeProjet ;
 
 	private String libelle ;
 
@@ -32,19 +30,19 @@ public class Cne implements Serializable {
 
 	private BigDecimal montant;
 	
-	private Long idRegion ;
+	private String idRegion ;
 
 	private String libelleRegion ;
 	
-	private Long idSecteurActivite;
+	private String idSecteurActivite;
 
 	private String libelleSecteurActivite;
 	
-	private Long idMaitreOuvrage;
+	private String idMaitreOuvrage;
 
-	private String sigleMaitreOuvrage;
+	private String libelleMaitreOuvrage;
 	
-	private Long idCategorie ;
+	private String idCategorie ;
 	
 	private String libelleCategorie ;
 

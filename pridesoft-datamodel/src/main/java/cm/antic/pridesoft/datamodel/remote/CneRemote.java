@@ -1,6 +1,7 @@
 package cm.antic.pridesoft.datamodel.remote;
 
 import java.io.Serializable;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -66,10 +67,7 @@ public class CneRemote implements Serializable {
 	
 	@Column(name="numero_quittance_payement")
 	private String numeroQuittancePayement;
-	
-	//@Column(name="region_execution")
-	//private Long regionExecution;
-	
+
 	@Column(name="observation")
 	private String observation;
 	
@@ -124,16 +122,10 @@ public class CneRemote implements Serializable {
 	
 	@Column(name="registre_commerce")
 	private String registreCommerce;
-	
-	
-//	@ManyToOne()
-//    @JoinColumn(name="fk_ac")
-//	private MaitreOuvrage ac;
-	
+
     @Column(name="fk_param_secteur_activite")
 	private Long secteurActivite;
 
-	
     @Column(name="fk_param_sous_secteur_activite")
 	private Long sousSecteurActivite;
 	

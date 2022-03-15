@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import javax.persistence.GeneratedValue;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.AllArgsConstructor;
@@ -20,8 +22,6 @@ import lombok.NoArgsConstructor;
 @Document
 public class Projet implements Serializable{
 	@Id
-	private Long id ;
-
 	private String codeProjet ;
 
 	private String libelle ;
@@ -40,7 +40,7 @@ public class Projet implements Serializable{
 	
 	private Long idMaitreOuvrage;
 
-	private String sigleMaitreOuvrage;
+	private String libelleMaitreOuvrage;
 	
 	private Long idCategorie ;
 	

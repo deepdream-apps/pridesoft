@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Document
 public class Utilisateur implements Serializable{
 	@Id
-	private Long id ;
+	private String id ;
 
 	private String login ;
 
@@ -27,4 +27,5 @@ public class Utilisateur implements Serializable{
 	private LocalDateTime dateExpiration ;
 
 	private LocalDateTime dateExpirationMdp ;
+	
 }

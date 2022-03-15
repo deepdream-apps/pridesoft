@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Document
 public class Region implements Serializable{
 	@Id
-	private Long id;
+	private String id;
 	
 	private String code;
 

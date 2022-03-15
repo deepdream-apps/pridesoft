@@ -5,11 +5,14 @@ import java.time.LocalDate;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
+@Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,23 +20,30 @@ import lombok.NoArgsConstructor;
 @Document
 public class ProjetTic implements Serializable{
 	@Id
-	private Long id ;
-	
 	private String codeProjet ;
 	
 	private String libelle ;
 	
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate dateSignature ;
 	
 	private BigDecimal montant ;
 	
-	private Long idCategorie ;
+	private String idCategorie ;
 	
-	private Long idRegion ;
+	private String libelleCategorie ;
 	
-	private Long idMaitreOuvrage ;
+	private String idRegion ;
 	
-	private Long idSecteurActivite ;
+	private String libelleRegion ;
+	
+	private String idMaitreOuvrage ;
+	
+	private String libelleMaitreOuvrage ;
+	
+	private String idSecteurActivite ;
+	
+	private String libelleSecteurActivite ;
 	
 	private String type ;
 

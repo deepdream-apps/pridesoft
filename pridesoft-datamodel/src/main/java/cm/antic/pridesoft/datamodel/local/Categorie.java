@@ -5,10 +5,11 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
+@Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -16,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Document
 public class Categorie implements Serializable{
 	@Id
-	private Long id;
+	private String id;
 
 	private String libelle;
 	
