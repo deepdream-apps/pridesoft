@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header ::header">
+</head>
+<body>
+	<!-- Top Bar Start -->
+	<div class="topbar">
+		<div th:replace="fragments/menus-bars ::top-menu"></div>
+		<div th:replace="fragments/menus-bars ::main-menu"></div>
+	</div>
+	<!-- Top Bar End -->
+	<!-- Page Content-->
+	<div class="wrapper">
+	
+		<div class="container-fluid">
+			<div class="row" >
+			 	<div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="float-right">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Car-TIC-Cameroun</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Gestion des projets TIC</a></li>
+                                    <li class="breadcrumb-item active">Configuration</li>
+                                </ol>
+                            </div>
+                            <h5 class="page-title" th:fragment="page-title">Edition d'un Projet TIC</h5>
+                        </div>
+                   </div>
+			</div>
+			<div class="row" >
+				<div class="col-md-12">
+				<div class="card" th:fragment="mini-menu"> 
+				<div class="card-body" >
+					<div class="form-group" >
+						<form  th:action="@{/projettic/modification}"  th:object="${projetTicExistant}"  method = "post" >
+							<div class="form-row" >
+								<div class="col-md-4" >
+									<div class="position-relative form-group" >
+										<label class = "font-weight-bold" >Code du projet </label>
+                              			<input  name="codeProjet" type="text" th:field="*{codeProjet}"  class="form-control" readonly="readonly" >
+                              		 </div>
+                                 </div>
+                                 <div class="col-md-8" >
+                                 	<label class = "font-weight-bold" >Libellé <span class="text-danger">*</span></label>
+                                 	<div class="position-relative form-group" >
+                               			<input  name="libelle" type="text"  th:field="*{libelle}"  class="form-control" >  
+                               		</div>
+                                 </div>
+                                 
+                                 <div class="col-md-4" >
+									<div class="position-relative form-group" >
+										<label class = "font-weight-bold" >Montant <span class="text-danger">*</span></label>
+                              			<input  name="montant" type="number" th:field="*{montant}"  class="form-control" required >
+                              		 </div>
+                                 </div>
+                                 
+                                 <div class="col-md-4" >
+									<div class="position-relative form-group" >
+										<label class = "font-weight-bold" >Date de signature <span class="text-danger">*</span></label>
+                              			<input  name="dateSignature" type="date" th:value="*{dateSignature}"  class="form-control" required >
+                              		 </div>
+                                 </div>
+                                 
+                                 <div class="col-md-4" >
+									<div class="position-relative form-group" >
+										<label class = "font-weight-bold" >Région <span class="text-danger">*</span></label>
+                              			<select class="form-control multiselect-dropdown bg-light"  th:field="*{idRegion}"    required  >
+            				    			<option value="" > </option>
+                                			<option th:each="r : ${listeRegions}" th:value="${r.id}" th:text="${r.libelle}"  ></option>
+            			    			</select>
+                              		 </div>
+                                 </div>
+                                 
+                                 <div class="col-md-4" >
+									<div class="position-relative form-group" >
+										<label class = "font-weight-bold" >Maître d'ouvrage <span class="text-danger">*</span></label>
+                              			<select class="form-control multiselect-dropdown bg-light"   th:field="*{idMaitreOuvrage}"  required  >
+            				    			<option value="" ></option>
+                                			<option th:each="m : ${listeMaitresOuvrage}" th:value="${m.id}" th:text="${m.libelle}"  ></option>
+            			    			</select>
+                              		 </div>
+                                 </div>
+                                 
+                                 <div class="col-md-4" >
+									<div class="position-relative form-group" >
+										<label class = "font-weight-bold" >Catégorie <span class="text-danger">*</span></label>
+                              			<select class="form-control multiselect-dropdown bg-light"   th:field="*{idCategorie}"  required  >
+            				    			<option value="" ></option>
+                                			<option th:each="c : ${listeCategories}" th:value="${c.id}" th:text="${c.libelle}"  ></option>
+            			    			</select>
+                              		 </div>
+                                 </div>
+                                 
+                                 <div class="col-md-4" >
+									<div class="position-relative form-group" >
+										<label class = "font-weight-bold" >Secteur d'activité <span class="text-danger">*</span></label>
+                              			<select class="form-control multiselect-dropdown bg-light"   th:field="*{idSecteurActivite}"  required  >
+            				    			<option  value="" ></option>
+                                			<option th:each="s : ${listeSecteursActivite}" th:value="${s.id}" th:text="${s.libelle}"  ></option>
+            			    			</select>
+                              		 </div>
+                                 </div>
+                                 
+                            </div>  
+                            <div class="modal-footer clearfix float-right">
+                    			<div class="float-left">
+                        			<a class="btn-shadow float-right btn-wide btn-pill mr-3 btn btn-outline-secondary"
+                        			   th:href="@{/projettic/liste}" >Annuler</a>
+                    			</div>
+                    			<div class="float-right">
+                        			<button class="tn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Enregistrer</button>
+                    			</div>
+                			</div>                             
+                        </form>
+					</div>
+				</div>
+			</div>
+				<!-- end col -->
+			</div>
+			</div>
+		</div>
+		<!-- container -->
+		<footer class="footer text-center text-sm-left"
+			th:replace="fragments/footer ::footer"> </footer>
+	</div>
+	<!-- end page-wrapper -->
+	<!-- jQuery  -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/waves.min.js"></script>
+	<script src="/js/jquery.slimscroll.min.js"></script>
+	<!-- Required datatable js -->
+	<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+	<!-- Buttons examples -->
+	<script src="/plugins/datatables/dataTables.buttons.min.js"></script>
+	<script src="/plugins/datatables/buttons.bootstrap4.min.js"></script>
+	<script src="/plugins/datatables/jszip.min.js"></script>
+	<script src="/plugins/datatables/pdfmake.min.js"></script>
+	<script src="/plugins/datatables/vfs_fonts.js"></script>
+	<script src="/plugins/datatables/buttons.html5.min.js"></script>
+	<script src="/plugins/datatables/buttons.print.min.js"></script>
+	<script src="/plugins/datatables/buttons.colVis.min.js"></script>
+	<!-- Responsive examples -->
+	<script src="/plugins/datatables/dataTables.responsive.min.js"></script>
+	<script src="/plugins/datatables/responsive.bootstrap4.min.js"></script>
+	<!-- Datatable init js -->
+	<script src="/pages/jquery.table-datatable.js"></script>
+	<!-- App js -->
+	<script src="/js/app.js"></script>
+</body>
+</html>

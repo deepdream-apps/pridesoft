@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 import java.util.Optional;
-
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
@@ -27,6 +27,12 @@ public class MaitreOuvrageService {
 	
 	
 	public MaitreOuvrage creer (MaitreOuvrage maitreOuvrage) {
+		maitreOuvrage.setId(UUID.randomUUID().toString());
+		return maitreOuvrageRepository.save(maitreOuvrage) ;
+	}
+	
+	
+	public MaitreOuvrage creerOuModifier (MaitreOuvrage maitreOuvrage) {
 		return maitreOuvrageRepository.save(maitreOuvrage) ;
 	}
 	
@@ -36,7 +42,7 @@ public class MaitreOuvrageService {
 	}
 	
 
-	public Optional<MaitreOuvrage> rechercher (Long id) {
+	public Optional<MaitreOuvrage> rechercher (String id) {
 		return maitreOuvrageRepository.findById(id)  ;
 	}
 	
@@ -53,14 +59,14 @@ public class MaitreOuvrageService {
 	}
 	
 	
-	public List<MaitreOuvrage> charger(List<MaitreOuvrageRemote> listeMaitresOuvrageR) {
+	public List<MaitreOuvrage> telecharger(List<MaitreOuvrageRemote> listeMaitresOuvrageR) {
 		return listeMaitresOuvrageR.stream()
-								   .peek(maitreOuvrageR -> log.info(String.format("Chargement de %s - %s", maitreOuvrageR.getSigle(), maitreOuvrageR.getDesignation())))
+								   .peek(maitreOuvrageR -> log.info(String.format("Chargement de %s - %s", maitreOuvrageR.getSigle(), maitreOuvrageR.getLibelle())))
 								   .map(maitreOuvrageR ->{
 									   MaitreOuvrage maitreOuvrage= new MaitreOuvrage();
-									   maitreOuvrage.setId(maitreOuvrageR.getId());
+									   maitreOuvrage.setId(Long.toString(maitreOuvrageR.getId()));
 									   maitreOuvrage.setSigle(maitreOuvrageR.getSigle()) ;
-									   maitreOuvrage.setLibelle(maitreOuvrageR.getDesignation()) ;
+									   maitreOuvrage.setLibelle(maitreOuvrageR.getLibelle()) ;
 									   return maitreOuvrageRepository.save(maitreOuvrage);
 								 }).collect(Collectors.toList()) ;
 		

@@ -36,8 +36,6 @@ public class MaitreOuvrageRemoteService {
 	}
 	
 	
-	public Optional<MaitreOuvrageRemote> rechercherDesignation (String designation) {
-		return maitreOuvrageRemoteRepository.findByDesignation(designation);
-	}
+
 	
 }

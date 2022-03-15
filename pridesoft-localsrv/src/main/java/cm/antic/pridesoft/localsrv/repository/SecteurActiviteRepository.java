@@ -4,7 +4,7 @@ import org.springframework.stereotype.Repository;
 import cm.antic.pridesoft.datamodel.local.SecteurActivite;
 
 @Repository
-public interface SecteurActiviteRepository extends MongoRepository<SecteurActivite, Long>{
+public interface SecteurActiviteRepository extends MongoRepository<SecteurActivite, String>{
 	
 	
 }

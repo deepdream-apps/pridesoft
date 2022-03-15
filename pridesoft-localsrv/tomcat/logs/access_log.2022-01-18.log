@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:46:00 +0100] "GET /ws/projettic/groupageannuel/periode/01-03-2020/31-03-2022 HTTP/1.1" 404 306
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:46:00 +0100] "GET /favicon.ico HTTP/1.1" 404 144
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:46:11 +0100] "GET /ws/projettic/data/groupageannuel/periode/01-03-2020/31-03-2022 HTTP/1.1" 200 233
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:46:22 +0100] "GET /ws/projettic/data/groupageannuel/periode/01-03-2020/31-03-2022 HTTP/1.1" 200 233
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:46:41 +0100] "GET /ws/projettic/data/groupageannuel/periode/01-03-2019/31-03-2022 HTTP/1.1" 200 233
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:47:28 +0100] "GET /ws/projettic/data/groupageannuel/periode/01-03-2019/31-03-2022 HTTP/1.1" 200 233
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:51:30 +0100] "GET /ws/projettic/barchart/groupageannuel/periode/01-03-2019/31-03-2022 HTTP/1.1" 404 306
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:51:43 +0100] "GET /ws/projettic/barchart/groupageannuel/periode/01-03-2019/31-03-2022/600/600 HTTP/1.1" 200 60857
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:52:12 +0100] "GET /ws/projettic/piechart/groupageannuel/periode/01-03-2019/31-03-2022 HTTP/1.1" 404 306
+0:0:0:0:0:0:0:1 - - [18/Jan/2022:13:52:29 +0100] "GET /ws/projettic/piechart/groupageannuel/periode/01-03-2019/31-03-2022/600/400 HTTP/1.1" 200 30294

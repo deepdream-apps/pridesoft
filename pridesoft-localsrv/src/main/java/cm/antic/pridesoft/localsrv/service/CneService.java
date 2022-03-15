@@ -1,7 +1,7 @@
 package cm.antic.pridesoft.localsrv.service;
 import java.time.LocalDate;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -33,18 +33,40 @@ public class CneService {
 	}
 	
 	
+	public Cne creerEtValider (Cne cne) {
+		Cne cneCree = cneRepository.save(cne) ;
+		ProjetTic projetTic = ProjetTic.builder()
+				.codeProjet(cne.getCodeProjet())
+			    .libelle(cne.getLibelle())
+			    .dateSignature(cne.getDateSignature())
+			    .montant(cne.getMontant())
+			    .idRegion(cne.getIdRegion())
+			    .libelleRegion(cne.getLibelleRegion())
+			    .idMaitreOuvrage(cne.getIdMaitreOuvrage())
+			    .libelleMaitreOuvrage(cne.getLibelleMaitreOuvrage())
+			    .idCategorie(cne.getIdCategorie())
+			    .libelleCategorie(cne.getLibelleCategorie())
+			    .idSecteurActivite(cne.getIdSecteurActivite())
+			    .libelleSecteurActivite(cne.getLibelleSecteurActivite())
+			    .build() ;
+		projetTicRepository.save(projetTic) ;
+		
+		return cneCree ;
+	}
+	
+	
 	public Cne modifier (Cne cne) {
 		return cneRepository.save(cne) ;
 	}
 	
 	
-	public Optional<Cne> rechercher (Long id) {
+	public Optional<Cne> rechercher (String id) {
 		return cneRepository.findById(id) ;
 	}
 	
 	
 	public Cne valider (Cne cne)  {
-		Optional<Cne> cneExistantOpt = cneRepository.findById(cne.getId()) ;
+		Optional<Cne> cneExistantOpt = cneRepository.findByCodeProjet(cne.getCodeProjet()) ;
 		return cneExistantOpt.map(this::handleValidation)
 				             .orElseThrow(LocalEntityNotFoundException::new) ;
 	}
@@ -52,7 +74,7 @@ public class CneService {
 	
 	private Cne handleValidation(Cne cne) {
 		ProjetTic projetTic = new ProjetTic() ;
-		projetTic.setCodeProjet(cne.getNumero());
+		projetTic.setCodeProjet(cne.getCodeProjet());
 		projetTic.setLibelle(cne.getLibelle());
 		projetTicRepository.save(projetTic) ;
 		
@@ -62,7 +84,7 @@ public class CneService {
 	
 	
 	public Cne invalider (Cne cne) {
-		Optional<Cne> cneExistantOpt = cneRepository.findById(cne.getId()) ;
+		Optional<Cne> cneExistantOpt = cneRepository.findByCodeProjet(cne.getCodeProjet()) ;
 		return cneExistantOpt.map(this::handleUnValidation)
 	             .orElseThrow(LocalEntityNotFoundException::new) ;
 	}
@@ -75,16 +97,10 @@ public class CneService {
 		
 	
 	
-	public List<Cne> validerEnMasse (LocalDate debut, LocalDate fin) {
-		List<Cne> listeCNEs = cneRepository.findByValideAndDateSignatureBetween(0, debut, fin) ;
-		
-		final List<String> listMotsCles = Arrays.asList("informatique", "moteur de recherche", "logiciel", 
-				"numérique", "digitalisation", " TIC ", "ordinateur", "laptop", "imprimante", 
-				"baie de brassage", "salle serveur" ) ;
-
-		return listeCNEs.stream().filter(p -> {
-			return listMotsCles.stream().anyMatch(motCle  ->  p.getLibelle().contains(motCle)) ;
-		 }).collect(Collectors.toList()) ;
+	public List<Cne> validerEnMasse (List<Cne> listeCNEs) {
+		return listeCNEs.stream()
+						.map(this::handleValidation)
+						.collect(Collectors.toList()) ;
 	}
 	
 

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+    <head th:replace="fragments/header ::header">
+
+</head>
+
+    <body>
+
+        <!-- Top Bar Start -->
+       <div class="topbar">
+        <div th:replace="fragments/menus-bars ::top-menu"></div>
+		<div th:replace="fragments/menus-bars ::main-menu"></div>
+       </div>
+        <!-- Top Bar End -->
+
+        <!-- Page Content-->
+        <div class="wrapper">
+
+            <div class="container-fluid">
+				<div class="row" th:replace="fragments/menus-bars ::breadcrumb"></div>
+                <!-- Page-Title -->
+                
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+				<div class="col-md-12">
+				<div class="card" th:fragment="mini-menu"> 
+				<div class="card-body">
+				
+                               <a type="button" class="btn btn-primary btn-lg" th:href="@{/unite-physique/ajout-unite-physique}"><i class="fas fa-plus-square mr-2"></i>Ajouter une unité physique</a>
+                              <a type="button" class="btn btn-soft-primary btn-lg" th:href="@{/unite-physique/index}"><i class="fas fa-th-list mr-2"></i>Liste des unités physiques</a>      
+                                
+                                
+                                <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                                    <a class="btn btn-soft-purple active">
+                                        consulter les mots clés
+                                    </a>
+                                    <a class="btn btn-soft-purple">
+                                        Consulter les catégories
+                                    </a>
+                                    
+                                </div>
+				</div>
+				</div>
+					<div class="card">
+						<div class="card-body">
+							<div th:if="${op == 1}"
+								class="alert alert-success alert-dismissible fade show d-flex align-items-center"
+								role="alert">
+								<button type="button" class="close" data-dismiss="alert"
+									aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+								<i class="mdi mdi-check-circle mr-2"></i>Success ! Unité physique
+								rajoutée avec succès.
+							</div>
+							<div th:if="${op == 0}"
+								class="alert alert-danger alert-dismissible fade show d-flex align-items-center"
+								role="alert">
+								<button type="button" class="close" data-dismiss="alert"
+									aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+								<i class="mdi mdi-close-circle mr-2"></i>Error ! Internal server
+								Error.
+							</div>
+							<h5 class="mt-0">Unités Physiques</h5>
+							<p class="text-muted font-13 mb-4">Liste des unités physiques permettant l'affinement des 
+							projets TIC</p>
+							<div class="table-responsive">
+								<table id="datatable-buttons"
+									class="table table-striped table-bordered w-100">
+									<thead>
+										<tr>
+											<th>Code</th>
+											<th>Libelle</th>
+                                            <th>Marque</th>
+                                            <th>Modèle</th>
+                                            <th>quantite</th>
+                                            <th>Prix unitaire</th>
+                                            <th>Prix total</th>
+                                            <th>Spécification technique</th>
+                                            <th>Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr th:if="${listeUnitePhysique.empty}">
+											<td colspan="9">Aucune action trouvée</td>
+										</tr>
+										<tr th:each="item : ${listeUnitePhysique}">
+                                                <td><span th:text="${item.id}">1</span></td>
+                                                <td><span th:text="${item.libelle}"></span></td>
+                                                <td><span th:text="${item.marque}"></span></td>
+                                                <td><span th:text="${item.modele}"></span></td>
+                                                <td><span th:text="${item.quantite}">1</span></td>
+                                                <td><span th:text="${item.montantUnite}"></span></td>
+                                                <td><span th:text="${item.montantTotal}"></span></td>
+                                                <td><span th:text="${item.specification}"></span></td> 
+                                                <td style="float: none; text-align:center"><div  class="btn-group btn-group-sm "
+													style="float: none; text-align:center">
+													<a  th:href="@{/unite-physique/maj-unite-physique/{id}(id=${item.id})}"
+														class="tabledit-edit-button btn btn-primary btn-round text-white"
+														style="float: none;" >
+														<span class="ti-pencil text-white"> </span>Editer
+													</a>
+													<a  th:href="@{/unite-physique/view/{id}(id=${item.id})}"
+														class="tabledit-edit-button btn btn-success btn-round text-white"
+														style="float: none;" >
+														<span class="ti-eye text-white"> </span>Visualiser
+													</a>
+													<a  th:href="@{/unite-physique/delete/{id}(id=${item.id})}"
+														class="tabledit-delete-button btn btn-danger btn-round text-white"
+														style="float: none; ">
+														<span class="ti-trash text-white"></span> Supprimer  
+													</a> 
+												</div></td>
+                                            </tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end col -->
+			</div>             
+              
+            </div><!-- container -->
+
+           <footer class="footer text-center text-sm-left"
+		th:replace="fragments/footer ::footer"> </footer> 
+        </div>
+        <!-- end page-wrapper -->
+
+		
+        <!-- jQuery  -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/waves.min.js"></script>
+        <script src="/js/jquery.slimscroll.min.js"></script>
+
+        <script src="/plugins/chartist/js/chartist.min.js"></script>
+        <script src="/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+        <script src="/plugins/morris/morris.min.js"></script>
+        <script src="/plugins/raphael/raphael-min.js"></script>
+        <script src="/plugins/peity-chart/jquery.peity.min.js"></script>
+        <script src="/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="/plugins/datatables/dataTables.bootstrap4.min.js"></script> 
+
+        <script src="/pages/jquery.dashboard2.init.js"></script>
+
+        <!-- App js -->
+        <script src="/js/app.js"></script>
+
+    </body>
+</html> 

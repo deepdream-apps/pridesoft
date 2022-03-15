@@ -37,7 +37,7 @@ public class CneRemoteWS {
 	}
 
 	
-	 @GetMapping("/{date1}/{date2}")
+	 @GetMapping("/periode/{date1}/{date2}")
 	 public List<CneRemote> getListeCne2( @PathVariable ("date1") String date1, @PathVariable ("date2") String date2){
 		 log.info(String.format("Recherche de CNEs de  %s a %s", date1, date2)) ;
 	     LocalDate dateDebut = LocalDate.parse(date1, DateTimeFormatter.ofPattern("dd-MM-yyyy")) ;

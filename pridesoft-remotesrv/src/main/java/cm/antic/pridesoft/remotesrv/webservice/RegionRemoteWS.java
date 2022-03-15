@@ -53,6 +53,14 @@ public class RegionRemoteWS {
 	}
 	
 	
+	@GetMapping("/all")
+	public List<RegionRemote> getRegions() {
+		log.info("Recherche des regions ");
+		return regionRemoteService.rechercher(new PaysRemote(1L, null)) ;
+	}
+	
+	
+	
 	 @ResponseStatus(value=HttpStatus.NOT_FOUND, reason="Region not found")  // 409
 	 @ExceptionHandler(RemoteEntityNotFoundException.class)
 	 public void handleRegionNotFound() {

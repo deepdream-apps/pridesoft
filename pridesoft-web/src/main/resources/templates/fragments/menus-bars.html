@@ -1,0 +1,260 @@
+
+            <div class="topbar-main" th:fragment="top-menu">
+                <div class="container-fluid">
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        <a href="index.html" class="logo">
+                            <span>
+                                <img th:src="@{/images/logo-sm.png}" alt="logo-small" class="logo-sm">
+                            </span>
+                            <span>
+                                <img th:src="@{/images/logo.png}" alt="logo-large" class="logo-lg">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <!-- Navbar -->
+                    <nav class="navbar-custom">
+    
+                        <!-- Search input -->
+                        <div class="search-wrap" id="search-wrap">
+                            <div class="search-bar">
+                                <input class="search-input" type="search" placeholder="Search here.." />
+                                <a href="javascript:void(0);" class="close-search search-btn" data-target="#search-wrap">
+                                    <i class="mdi mdi-close-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <ul class="list-unstyled topbar-nav float-right mb-0" >   
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <i class="mdi mdi-bell-outline nav-icon"></i>
+                                    <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                                    <!-- item-->
+                                    <h6 class="dropdown-item-text">
+                                        Notifications (258)
+                                    </h6>
+                                    <div class="slimscroll notification-list">
+                                        <!-- item-->
+                                        <a th:href="@{/motscles/index}" class="dropdown-item notify-item active">
+                                            <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                            <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                            <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-info"><i class="mdi mdi-martini"></i></div>
+                                            <p class="notify-details">Your item is shipped<small class="text-muted">It is a long established fact that a reader will</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                            <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                                            <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                        </a>
+                                    </div>
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                        View all <i class="fi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+    
+                            <li class="hidden-sm">
+                                <a class="nav-link waves-effect waves-light" href="javascript:void(0);" id="btn-fullscreen">
+                                    <i class="mdi mdi-fullscreen nav-icon"></i>
+                                </a>
+                            </li>
+    
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <img th:src="@{/images/users/user-1.jpg}" alt="profile-user" class="rounded-circle" /> 
+                                    <span class="ml-1 nav-user-name hidden-sm">Administrateur<i class="mdi mdi-chevron-down"></i> </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>                                    
+                                    <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                                    <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link" id="mobileToggle">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>    
+                        </ul>
+            
+<!--                         <ul class="list-unstyled topbar-nav mb-0"> -->
+                            
+<!--                             <li class="hidden-sm"> -->
+<!--                                 <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button" -->
+<!--                                     aria-haspopup="false" aria-expanded="false"> -->
+<!--                                     <i class="mdi mdi-library-plus mr-2"></i>Tools <i class="mdi mdi-chevron-down"></i>  -->
+<!--                                 </a> -->
+<!--                                 <div class="dropdown-menu"> -->
+    
+<!--                                     item -->
+<!--                                     <a href="javascript:void(0);" class="dropdown-item"> -->
+<!--                                         Photoshop -->
+<!--                                     </a> -->
+<!--                                     item -->
+<!--                                     <a href="javascript:void(0);" class="dropdown-item"> -->
+<!--                                         Visual Studio  -->
+<!--                                     </a> -->
+<!--                                     item -->
+<!--                                     <a href="javascript:void(0);" class="dropdown-item"> -->
+<!--                                         Sublime Text 3 -->
+<!--                                     </a> -->
+<!--                                     item -->
+<!--                                     <a href="javascript:void(0);" class="dropdown-item"> -->
+<!--                                         Phpstorm -->
+<!--                                     </a> -->
+    
+<!--                                 </div> -->
+<!--                             </li> -->
+<!--                             <li class="hidden-sm"> -->
+<!--                                 <a class="nav-link waves-effect waves-light" href="../landing/index.html" target="_blank"> -->
+<!--                                     <i class="mdi mdi-airplane mr-2"></i>Landing  -->
+<!--                                 </a> -->
+<!--                             </li> -->
+<!--                         </ul> -->
+    
+                    </nav>
+                    <!-- end navbar-->
+                </div>
+            </div>
+           
+            <!-- MENU Start -->
+            <div class="navbar-custom-menu" th:fragment="main-menu">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="">
+                                <a th:href="@{/dashboard}">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    Tableau de bord
+                                </a>
+                                
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-buffer"></i>Gestion des projets</a>
+                                <ul class="submenu">
+								<li class="has-submenu"><a href="#">Collecte de projets</a>
+									<ul class="submenu">
+										<li><a th:href="@{/projet/telechargement}">T&eacutel&eacutechargement des projets </a></li>
+										<li><a th:href="@{/projet/liste}" >Consultation des projets</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-submenu"><a href="#">Collecte des CNE</a>
+									<ul class="submenu">
+										<li><a th:href="@{/cne/telechargement}">T&eacutel&eacutechargement des CNE </a></li>
+										<li><a th:href="@{/cne/liste}">Consultation des CNE</a></li>
+									</ul>
+								</li>
+								<li><a th:href="@{/projettic/liste}">Recherche des projets TIC</a></li>
+							</ul>
+                            </li>
+                            
+                            <li class="has-submenu" >
+                                <a href="#"><i class=" mdi mdi-table-edit"></i>Affinements des projets</a>
+                                <ul class="submenu" >
+                                	<li><a th:href="@{/maitreouvrage/liste}" >Maitres d'ouvrage</a></li>
+									<li><a th:href="@{/categorie/liste}" >Cat&eacutegories</a></li>
+									<li><a th:href="@{/secteuractivite/liste}" >Secteurs d'activit&eacute</a></li>
+									<li><a th:href="@{/region/liste}" >R&eacutegions</a></li>
+								</ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-book-open-page-variant"></i>Cartographie des projets</a>
+                                <ul class="submenu">
+                                   <li><a th:href="@{/groupageregional/liste}" >Cartographie par r&eacutegion</a></li>  
+                                   <li><a th:href="@{/groupageannuel/liste}" >Cartographie par ann&eacutee</a></li>  
+                                   <li><a th:href="@{/groupagecategoriel/liste}" >Cartographie par cat&eacutegorie</a></li> 
+                                   <li><a th:href="@{/groupagesectoriel/liste}" >Cartographie par secteur d'activit&eacute</a></li> 
+                                   <li><a th:href="@{/groupageparmo/liste}" >Cartographie par maitre d'ouvrage</a></li> 
+                                 </ul>
+                             </li> 
+                            
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-settings"></i>Param&egravetres</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a th:href="@{/utilisateur/ajout-motcle}">Utilisateurs</a>
+                                    </li>
+                                     <li>
+                                        <a th:href="@{/profil/ajout-motcle}">Profil</a>
+                                    </li>
+                                   <div class="dropdown-divider"></div>
+                                   <li>
+                                        <a th:href="@{/maitre-ouvrage/index}">Maitre d'ouvrage</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/entreprise/index}">Entreprise</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/pays/index}">Pays</a>
+                                    </li>
+                                   <li>
+                                        <a th:href="@{/region/index}">R&eacutegion</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/departement/index}">D&eacutepartement</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/ville/index}">Ville</a> 
+                                    </li>
+                                     <li>
+                                        <a th:href="@{/nature-prestation/index}">Nature prestation</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/type-entreprise/index}">Type d'entreprise</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/type-procedure/index}">Type de proc&eacutedure</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/type-mo-ac/index}">Type MO/AC</a>
+                                    </li>
+                                     <div class="dropdown-divider"></div>
+                                     <li>
+                                        <a th:href="@{/profil/ajout-motcle}">Indicateurs statitiques</a>
+                                    </li>
+                                                                 
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end navigation -->
+                </div> <!-- end container-fluid -->
+            </div> <!-- end navbar-custom -->
+       
+        
+
+
+                <!-- end page title end breadcrumb -->

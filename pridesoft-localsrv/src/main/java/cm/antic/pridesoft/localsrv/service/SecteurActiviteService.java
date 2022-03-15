@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
@@ -24,7 +25,7 @@ public class SecteurActiviteService {
 	}
 	
 	
-	public Optional<SecteurActivite> rechercher (Long id) {
+	public Optional<SecteurActivite> rechercher (String id) {
 		return SecteurActiviteRepository.findById(id) ;
 	}
 	
@@ -43,21 +44,25 @@ public class SecteurActiviteService {
 				.peek(SecteurActivite -> log.info(String.format("Chargement de %s - %s", SecteurActivite.getSigle(), SecteurActivite.getLibelle())))
 				.map(SecteurActiviteR -> {
 					SecteurActivite SecteurActivite = new SecteurActivite();
-					SecteurActivite.setId(SecteurActiviteR.getId());
+					SecteurActivite.setId(Long.toString(SecteurActiviteR.getId()));
 					SecteurActivite.setLibelle(SecteurActiviteR.getLibelle());
-					SecteurActivite.setSigle(SecteurActiviteR.getSigle());
 					return SecteurActiviteRepository.save(SecteurActivite);
 			  }).collect(Collectors.toList()) ;
 	}
 	
 	
+	public SecteurActivite creer (SecteurActivite secteurActivite) {
+		secteurActivite.setId(UUID.randomUUID().toString());
+		return SecteurActiviteRepository.save(secteurActivite) ;
+	}
 	
-	public SecteurActivite modifier (SecteurActivite SecteurActivite) throws Exception {
+	
+	public SecteurActivite modifier (SecteurActivite SecteurActivite) {
 		return SecteurActiviteRepository.save(SecteurActivite) ;
 	}
 	
 	
-	public void supprimer (SecteurActivite SecteurActivite) throws Exception {
+	public void supprimer (SecteurActivite SecteurActivite)  {
 		SecteurActiviteRepository.delete(SecteurActivite) ;
 	}
 }

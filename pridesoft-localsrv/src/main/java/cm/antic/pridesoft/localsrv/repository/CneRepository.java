@@ -8,15 +8,13 @@ import org.springframework.stereotype.Repository;
 import cm.antic.pridesoft.datamodel.local.Cne;
 
 @Repository
-public interface CneRepository extends MongoRepository<Cne, Long>{
+public interface CneRepository extends MongoRepository<Cne, String>{
+	
+	public Optional<Cne> findByCodeProjet (String codeProjet) ;
 	
 	public List<Cne> findByDateSignatureBetween (LocalDate date1, LocalDate date2)  ;
 	
 	public List<Cne> findByValideAndDateSignatureBetween (int valide, LocalDate dateDebut, LocalDate dateFin) ;
-	
-	@Query("select c from CneL c where c.numero= ?1")
-	public Optional<Cne> findByNumero (String numero);	
-	
 	
 	public Long countByValide(int valide);
 }

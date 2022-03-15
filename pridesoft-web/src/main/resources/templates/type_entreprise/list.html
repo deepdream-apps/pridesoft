@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header ::header">
+</head>
+<body>
+	<!-- Top Bar Start -->
+	<div class="topbar">
+		<div th:replace="fragments/menus-bars ::top-menu"></div>
+		<div th:replace="fragments/menus-bars ::main-menu"></div>
+	</div>
+	<!-- Top Bar End -->
+	<!-- Page Content-->
+	<div class="wrapper">
+	
+		<div class="container-fluid">
+			<div class="row" th:replace="fragments/menus-bars ::breadcrumb"></div>
+			<div class="row">
+				<div class="col-md-12">
+				<div class="card" th:fragment="mini-menu"> 
+					<div class="card-body">
+						<a type="button" class="btn btn-primary btn-lg" th:href="@{/type-entreprise/charger}"><i class="fas fa-plus-square mr-2"></i>Telecharger</a>
+	                    <a type="button" class="btn btn-soft-primary btn-lg" th:href="@{/type-entreprise/index}"><i class="fas fa-th-list mr-2"></i>Liste</a>      
+	                                
+					</div>
+				</div>
+					<div class="card">
+						<div class="card-body">
+							
+							<h5 class="mt-0">Type d'entreprise</h5>
+							<p class="text-muted font-13 mb-4">Liste des types d'entreprise.</p>
+							<div class="table-responsive">
+								<table id="datatable-buttons"
+									class="table table-striped table-bordered w-100">
+									<thead>
+										<tr>
+											<th>Code</th>
+											<th>Libellé</th>
+											<th>Description</th>
+											<th>Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr th:if="${listeTypeEntreprise.empty}">
+											<td colspan="4" >Aucune donnée</td>
+										</tr>
+										<tr th:each="a : ${listeTypeEntreprise}">
+											<td><span th:text="${a.id}"></span></td>
+											<td><span th:text="${a.libelle}"></span></td>
+											<td><span th:text="${a.description}"></span></td>
+											<td style="float: none; text-align:center"><div  class="btn-group btn-group-sm "
+													style="float: none; text-align:center">
+													<a  th:href="@{/type-entreprise/maj-type-entreprise/{id}(id=${a.id})}"
+														class="tabledit-edit-button btn btn-primary btn-round text-white"
+														style="float: none;" >
+														<span class="ti-pencil text-white"> </span>Editer
+													</a>
+													<a  th:href="@{/type-entreprise/delete/{id}(id=${a.id})}"
+														class="tabledit-delete-button btn btn-danger btn-round text-white"
+														style="float: none; ">
+														<span class="ti-trash text-white"></span> Supprimer  
+													</a> 
+												</div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end col -->
+			</div>
+		</div>
+		<!-- container -->
+		<footer class="footer text-center text-sm-left"
+			th:replace="fragments/footer ::footer"> </footer>
+	</div>
+	<!-- end page-wrapper -->
+	<!-- jQuery  -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/waves.min.js"></script>
+	<script src="/js/jquery.slimscroll.min.js"></script>
+	<!-- Required datatable js -->
+	<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+	<!-- Buttons examples -->
+	<script src="/plugins/datatables/dataTables.buttons.min.js"></script>
+	<script src="/plugins/datatables/buttons.bootstrap4.min.js"></script>
+	<script src="/plugins/datatables/jszip.min.js"></script>
+	<script src="/plugins/datatables/pdfmake.min.js"></script>
+	<script src="/plugins/datatables/vfs_fonts.js"></script>
+	<script src="/plugins/datatables/buttons.html5.min.js"></script>
+	<script src="/plugins/datatables/buttons.print.min.js"></script>
+	<script src="/plugins/datatables/buttons.colVis.min.js"></script>
+	<!-- Responsive examples -->
+	<script src="/plugins/datatables/dataTables.responsive.min.js"></script>
+	<script src="/plugins/datatables/responsive.bootstrap4.min.js"></script>
+	<!-- Datatable init js -->
+	<script src="/pages/jquery.table-datatable.js"></script>
+	<!-- App js -->
+	<script src="/js/app.js"></script>
+</body>
+</html>

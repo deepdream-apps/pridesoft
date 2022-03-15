@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Amezia - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A premium admin dashboard template by themesbrand" name="description" />
+        <meta content="Themesbrand" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+            <div class="topbar-main">
+                <div class="container-fluid">
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        <a href="index.html" class="logo">
+                            <span>
+                                <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                            </span>
+                            <span>
+                                <img src="assets/images/logo.png" alt="logo-large" class="logo-lg">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <!-- Navbar -->
+                    <nav class="navbar-custom">
+    
+                        <!-- Search input -->
+                        <div class="search-wrap" id="search-wrap">
+                            <div class="search-bar">
+                                <input class="search-input" type="search" placeholder="Search here.." />
+                                <a href="javascript:void(0);" class="close-search search-btn" data-target="#search-wrap">
+                                    <i class="mdi mdi-close-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <ul class="list-unstyled topbar-nav float-right mb-0">   
+                            <li>
+                                <a class="nav-link waves-effect waves-light search-btn" href="javascript:void(0);" data-target="#search-wrap">
+                                    <i class="mdi mdi-magnify nav-icon"></i>
+                                </a>
+                            </li>                 
+    
+                            <li class="hidden-sm">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="javascript: void(0);" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    English <img src="assets/images/flags/us_flag.jpg" class="ml-2" height="16" alt=""/> <i class="mdi mdi-chevron-down"></i> 
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="javascript: void(0);"><span> German </span><img src="assets/images/flags/germany_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                                    <a class="dropdown-item" href="javascript: void(0);"><span> Italian </span><img src="assets/images/flags/italy_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                                    <a class="dropdown-item" href="javascript: void(0);"><span> French </span><img src="assets/images/flags/french_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                                    <a class="dropdown-item" href="javascript: void(0);"><span> Spanish </span><img src="assets/images/flags/spain_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                                    <a class="dropdown-item" href="javascript: void(0);"><span> Russian </span><img src="assets/images/flags/russia_flag.jpg" alt="" class="ml-2 float-right" height="14"/></a>
+                                </div>
+                            </li>
+    
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <i class="mdi mdi-bell-outline nav-icon"></i>
+                                    <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                                    <!-- item-->
+                                    <h6 class="dropdown-item-text">
+                                        Notifications (258)
+                                    </h6>
+                                    <div class="slimscroll notification-list">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                            <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                            <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                            <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-info"><i class="mdi mdi-martini"></i></div>
+                                            <p class="notify-details">Your item is shipped<small class="text-muted">It is a long established fact that a reader will</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                            <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                        </a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                                            <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                        </a>
+                                    </div>
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                        View all <i class="fi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+    
+                            <li class="hidden-sm">
+                                <a class="nav-link waves-effect waves-light" href="javascript:void(0);" id="btn-fullscreen">
+                                    <i class="mdi mdi-fullscreen nav-icon"></i>
+                                </a>
+                            </li>
+    
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/users/user-1.jpg" alt="profile-user" class="rounded-circle" /> 
+                                    <span class="ml-1 nav-user-name hidden-sm">Amelia <i class="mdi mdi-chevron-down"></i> </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                                    <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                                    <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                                    <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link" id="mobileToggle">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>    
+                        </ul>
+            
+                        <ul class="list-unstyled topbar-nav mb-0">
+                            
+                            <li class="hidden-sm">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="false" aria-expanded="false">
+                                    <i class="mdi mdi-library-plus mr-2"></i>Tools <i class="mdi mdi-chevron-down"></i> 
+                                </a>
+                                <div class="dropdown-menu">
+    
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        Photoshop
+                                    </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        Visual Studio 
+                                    </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        Sublime Text 3
+                                    </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        Phpstorm
+                                    </a>
+    
+                                </div>
+                            </li>
+                            <li class="hidden-sm">
+                                <a class="nav-link waves-effect waves-light" href="../landing/index.html" target="_blank">
+                                    <i class="mdi mdi-airplane mr-2"></i>Landing 
+                                </a>
+                            </li>
+                        </ul>    
+                    </nav>
+                    <!-- end navbar-->
+                </div>
+            </div><!--end topbar-main-->
+            
+
+            <!-- MENU Start -->
+            <div class="navbar-custom-menu">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="#">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    Dashboard
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="index.html">Dashboard 1</a></li>
+                                    <li><a href="index-2.html">Dashboard 2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-email"></i>Email</a>
+                                <ul class="submenu">
+                                    <li><a href="email-inbox.html">Inbox</a></li>
+                                    <li><a href="email-read.html">Read Email</a></li>
+                                    <li><a href="email-compose.html">Compose Email</a></li>
+                                </ul>
+                            </li>
+
+                           <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-bullseye"></i>Advanced UI</a>
+                                <ul class="submenu">
+                                    <li><a href="advanced-rangeslider.html">Range Slider</a></li>
+                                    <li><a href="advanced-sweetalerts.html">Sweet Alerts</a></li>
+                                    <li><a href="advanced-nestable.html">Nestable List</a></li>
+                                    <li><a href="advanced-ratings.html">Ratings</a></li>
+                                    <li><a href="advanced-highlight.html">Highlight</a></li>
+                                    <li><a href="advanced-clipboard.html">Clipboard</a></li>
+                                    <li><a href="advanced-lightbox.html">Lightbox</a></li>
+                                    <li><a href="advanced-session.html">Session Timeout</a></li>
+                                    <li><a href="advanced-scrollbars.html">Scrollbars</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-buffer"></i>UI Elements</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-alerts.html">Alerts</a></li>
+                                            <li><a href="ui-buttons.html">Buttons</a></li>
+                                            <li><a href="ui-cards.html">Cards</a></li>
+                                            <li><a href="ui-dropdowns.html">Dropdowns</a></li>
+                                            <li><a href="ui-modals.html">Modals</a></li> 
+                                            <li><a href="ui-spinners.html">Spinners</a></li>                                           
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-typography.html">Typography</a></li>
+                                            <li><a href="ui-progress.html">Progress</a></li>
+                                            <li><a href="ui-tabs-accordions.html">Tabs & Accordions</a></li>
+                                            <li><a href="ui-tooltips-popovers.html">Tooltips & Popover</a></li>
+                                            <li><a href="ui-carousel.html">Carousel</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="ui-pagination.html">Pagination</a></li>
+                                            <li><a href="ui-video.html">Videos</a></li>
+                                            <li><a href="ui-colors.html">Colors</a></li>
+                                            <li><a href="ui-grid.html">Grid System</a></li>
+                                            <li><a href="ui-toasts.html">Toasts</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-arrow-down-drop-circle-outline"></i>More</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="calendar.html">Calendar</a>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Icons</a>
+                                        <ul class="submenu">
+                                            <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                            <li><a href="icons-dripicons.html">Dripicons</a></li>
+                                            <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                            <li><a href="icons-themify.html">Themify</a></li>
+                                            <li><a href="icons-typicons.html">Typicons</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Tables </a>
+                                        <ul class="submenu">
+                                            <li><a href="tables-basic.html">Basic</a></li>
+                                            <li><a href="tables-datatable.html">Datatables</a></li>
+                                            <li><a href="tables-responsive.html">Responsive</a></li>
+                                            <li><a href="tables-editable.html">Editable</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Forms</a>
+                                        <ul class="submenu">
+                                            <li><a href="forms-elements.html">Basic Elements</a></li>
+                                            <li><a href="forms-advanced.html">Advance Elements</a></li>
+                                            <li><a href="forms-validation.html">Validation</a></li>
+                                            <li><a href="forms-wizard.html">Wizard</a></li>
+                                            <li><a href="forms-editors.html">Editors</a></li>
+                                            <li><a href="forms-repeater.html">Repeater</a></li>
+                                            <li><a href="forms-x-editable.html">X Editable</a></li>
+                                            <li><a href="forms-uploads.html">File Upload</a></li>
+                                        </ul>
+                                    </li>   
+                                    <li class="has-submenu">
+                                        <a href="#">Maps</a>
+                                        <ul class="submenu">
+                                            <li><a href="maps-google.html">Google Maps</a></li>
+                                            <li><a href="maps-vector.html">Vector Maps</a></li>
+                                        </ul>
+                                    </li>   
+                                    <li class="has-submenu">
+                                        <a href="#">Email Templates</a>
+                                        <ul class="submenu">
+                                            <li><a href="email-templates-basic.html">Basic Action Email</a></li>
+                                            <li><a href="email-templates-alert.html">Alert Email</a></li>
+                                            <li><a href="email-templates-billing.html">Billing Email</a></li>
+                                        </ul>
+                                    </li>                                   
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-chart-bar"></i>Charts</a>
+                                <ul class="submenu">
+                                    <li><a href="charts-morris.html">Morris</a></li>
+                                    <li><a href="charts-chartist.html">Chartist</a></li>
+                                    <li><a href="charts-flot.html">Flot</a></li>
+                                    <li><a href="charts-peity.html">Peity</a></li>
+                                    <li><a href="charts-chartjs.html">Chartjs</a></li>
+                                    <li><a href="charts-sparkline.html">Sparkline</a></li>
+                                    <li><a href="charts-knob.html">Jquery Knob</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-book-open-page-variant"></i>Pages</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="page-tour.html">Tour</a></li>
+                                            <li><a href="page-timeline.html">Timeline</a></li>
+                                            <li><a href="page-invoice.html">Invoice</a></li>
+                                            <li><a href="page-treeview.html">Treeview</a></li>
+                                            <li><a href="page-profile.html">Profile</a></li>                                            
+                                            <li><a href="page-pricing.html">Pricing</a></li>
+                                            <li><a href="page-faq.html">FAQs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="page-starter.html">Starter Page</a></li>
+                                            <li><a href="auth-login.html">Login</a></li>
+                                            <li><a href="auth-register.html">Register</a></li>
+                                            <li><a href="auth-recoverpw.html">Recover Password</a></li>
+                                            <li><a href="auth-lock-screen.html">Lock Screen</a></li>
+                                            <li><a href="auth-404.html">Error 404</a></li>
+                                            <li><a href="auth-500.html">Error 500</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end navigation -->
+                </div> <!-- end container-fluid -->
+            </div> <!-- end navbar-custom -->
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Page Content-->
+        <div class="wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="float-right">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Amezia</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">UI Kit</a></li>
+                                    <li class="breadcrumb-item active">Typography</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Typography</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    <div class="col-md-12 col-xl-6">
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <div class="font-18">                                                
+                                    <code>@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');;</code><br>
+                                    <code>font-family : 'Rubik', sans-serif ; </code><br>
+                                    <code>font-weight: normal ;</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="mt-0">Heading </h5> 
+                                <p class="text-muted font-13 mb-4">All HTML headings, 
+                                    <code class="highlighter-rouge">&lt;h1&gt;</code> through 
+                                    <code class="highlighter-rouge">&lt;h6&gt;</code>, are available.
+                                </p>                                                                 
+                                <div class="">
+                                    <h1>h1. Bootstrap heading</h1>
+                                    <h2>h2. Bootstrap heading</h2>
+                                    <h3>h3. Bootstrap heading</h3>
+                                    <h4>h4. Bootstrap heading</h4>
+                                    <h5>h5. Bootstrap heading</h5>
+                                    <h6>h6. Bootstrap heading</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">        
+                                <h5 class="mt-0">Blockquotes</h5>
+                                <p class="text-muted font-13 mb-4">For quoting blocks of content from
+                                    another source within your document. Wrap <code class="highlighter-rouge">&lt;blockquote
+                                        class="blockquote"&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.</p>
+
+                                <blockquote class="blockquote">
+                                    <p class="mb-0 font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer font-13">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+
+                                <blockquote class="blockquote blockquote-reverse mb-0">
+                                    <p class="mb-0 font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer font-13">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="mt-0">Display Headings </h5>
+                                <p class="text-muted font-13 mb-4">Traditional heading elements are designed to work best in the meat of your page content. </p>
+                                <div class="">
+                                    <h1 class="display-1">Display 1</h1>
+                                    <h1 class="display-2">Display 2</h1>
+                                    <h1 class="display-3">Display 3</h1>
+                                    <h1 class="display-4">Display 4</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h5 class="mt-0">Alignments</h5>
+                                    <p class="text-muted  font-13 mb-4">Use text utilities as needed to change the alignment of your text.</p>
+                                </div>
+                                <div class="text-left">
+                                    <p>This line of text is left.</p>
+                                </div>
+                                <div class="text-center">
+                                    <p>This line of text is center.</p>
+                                </div> 
+                                <div class="text-right">
+                                    <p>This line of text is right.</p>
+                                </div> 
+                                <div class="text-justify">
+                                    <p class="mb-0">This line of text is justify.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">        
+                                <h5 class="mt-0">Unstyled List</h5>
+                                
+                                <ul class="list-unstyled">
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Nulla volutpat aliquam velit
+                                        <ul>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                            <li>Vestibulum laoreet porttitor sem</li>
+                                        </ul>
+                                    </li>
+                                    <li>Faucibus porta lacus fringilla vel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">        
+                                <h5 class="mt-0">Unorder List</h5>                                            
+
+                                <ul class="">
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Nulla volutpat aliquam velit
+                                        <ul>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                            <li>Vestibulum laoreet porttitor sem</li>
+                                        </ul>
+                                    </li>
+                                    <li>Faucibus porta lacus fringilla vel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">        
+                                <h5 class="mt-0">Order List</h5> 
+                                <ol class="">
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Nulla volutpat aliquam velit
+                                        <ul>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                            <li>Vestibulum laoreet porttitor sem</li>
+                                        </ul>
+                                    </li>
+                                    <li>Faucibus porta lacus fringilla vel</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-body">        
+                                <h5 class="mt-0">Inline text elements</h5>
+                                <p class="text-muted font-13 mb-4">Styling for common inline HTML5 elements.</p>            
+                                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                                <p><u>This line of text will render as underlined</u></p>
+                                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                                <p><strong>This line rendered as bold text.</strong></p>
+                                <p><em>This line rendered as italicized text.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-body color-table">
+                                <h5 class="mt-0">Text Color</h5>
+                                <p class="text-muted font-13 mb-4">Convey meaning through color with a handful of color utility classes.</p>
+                                <p class="text-primary">This text color is primary</p>
+                                <p class="text-success">This text color is success</p>
+                                <p class="text-danger">This text color is danger</p>
+                                <p class="text-warning">This text color is warning</p>
+                                <p class="text-info">This text color is info</p>
+                                <p class="text-secondary">This text color is secondary</p>
+                                <p class="text-muted">This text color is muted</p>
+                                <p class="text-light"><span class="bg-dark text-light">This text color is light</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xl-9">
+                        <div class="card">
+                            <div class="card-body">        
+                                <h5 class="mt-0">Description list alignment</h5>
+                                <p class="text-muted font-13 mb-4">Align terms and descriptions
+                                    horizontally by using our grid system’s predefined classes (or semantic
+                                    mixins). For longer terms, you can optionally add a <code class="highlighter-rouge">.text-truncate</code> class to
+                                    truncate the text with an ellipsis.</p>
+
+                                <dl class="row mb-0">
+                                    <dt class="col-sm-3">Description lists</dt>
+                                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                                    <dt class="col-sm-3">Euismod</dt>
+                                    <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                    <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+
+                                    <dt class="col-sm-3">Malesuada porta</dt>
+                                    <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                                    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                                    <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+                                    <dt class="col-sm-3">Nesting</dt>
+                                    <dd class="col-sm-9 mb-0">
+                                        <dl class="row  mb-0">
+                                            <dt class="col-sm-4 mb-0">Nested definition list</dt>
+                                            <dd class="col-sm-8 mb-0">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h5 class="mt-0">Address</h5>
+                                    <p class="font-13 mb-4 text-muted">Start to <code>&lt;address&gt;</code> tag.</p>
+                                </div>
+                                <address class="ng-scope">
+                                    <strong>Twitter, Inc.</strong><br>
+                                    <i>795 Folsom Ave, Suite 600<br>
+                                    San Francisco, CA 94107<br></i>
+                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                </address>                                            
+                            </div>
+                        </div>
+                    </div><!-- End Col -->
+                </div><!-- End row -->
+
+            </div><!-- container -->
+
+            <footer class="footer text-center text-sm-left">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                                © 2018-2019 Amezia <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </footer>
+        </div>
+        <!-- end page-wrapper -->
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

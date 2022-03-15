@@ -71,6 +71,7 @@
     		<groupId>org.ehcache</groupId>
     		<artifactId>ehcache</artifactId>
 		</dependency>  
+		
 	</dependencies>
 	<build>
 		<plugins>
@@ -85,6 +86,29 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				 <version>1.4.8</version>
+				<configuration>
+					<repository>deepdreamapps/pridesoft-remotesrv</repository>
+					<tag>${project.version}</tag>
+					<buildArg>
+						<JAR_FILE>target/${project.build.finalName}-${project.version}.jar</JAR_FILE>
+					</buildArg>
+					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
+				</configuration>
+				<executions>
+					<execution>
+						<id>default</id>
+						<phase>install</phase>
+						<goals>
+							<goal>build</goal>
+							<goal>push</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

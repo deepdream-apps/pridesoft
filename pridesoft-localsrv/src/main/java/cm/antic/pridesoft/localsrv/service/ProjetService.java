@@ -13,7 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cm.antic.pridesoft.datamodel.exceptions.LocalEntityNotFoundException;
 import cm.antic.pridesoft.datamodel.local.Projet;
+import cm.antic.pridesoft.datamodel.local.ProjetTic;
 import cm.antic.pridesoft.localsrv.repository.ProjetRepository;
+import cm.antic.pridesoft.localsrv.repository.ProjetTicRepository;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
@@ -21,10 +23,38 @@ import lombok.extern.log4j.Log4j2;
 @Service
 public class ProjetService {
 	private ProjetRepository projetRepository ;
+	private ProjetTicRepository projetTicRepository ;
+	
+	public ProjetService(ProjetRepository projetRepository, ProjetTicRepository projetTicRepository) {
+		this.projetRepository = projetRepository ;
+		this.projetTicRepository = projetTicRepository ;
+	}
 	
 	
 	public Projet creer (Projet projet)  {
 		return projetRepository.save(projet) ;
+	}
+	
+	
+	public Projet creerEtValider (Projet projet)  {
+		projet.setValide(1) ;
+		Projet projetCree = projetRepository.save(projet) ;
+		ProjetTic projetTic = ProjetTic.builder()
+								.codeProjet(projet.getCodeProjet())
+							    .libelle(projet.getLibelle())
+							    .dateSignature(projet.getDateSignature())
+							    .montant(projet.getMontant())
+							    .idRegion(String.valueOf(projet.getIdRegion()))
+							    .libelleRegion(projet.getLibelleRegion())
+							    .idMaitreOuvrage(Long.toString(projet.getIdMaitreOuvrage()))
+							    .libelleMaitreOuvrage(projet.getLibelleMaitreOuvrage())
+							    //.idCategorie(Long.toString(projet.getIdCategorie()))
+							    //.libelleCategorie(projet.getLibelleCategorie())
+							    //.idSecteurActivite(Long.toString(projet.getIdSecteurActivite()))
+							    //.libelleSecteurActivite(projet.getLibelleSecteurActivite())
+							    .build() ;
+		projetTicRepository.save(projetTic) ;
+		return projetCree ;
 	}
 	
 	
@@ -34,8 +64,7 @@ public class ProjetService {
 	
 	
 	public Projet valider (Projet projet) {
-		Optional<Projet> projectExistantOpt = projetRepository.findById(projet.getId()) ;
-		
+		Optional<Projet> projectExistantOpt = projetRepository.findByCodeProjet(projet.getCodeProjet()) ;
 		return projectExistantOpt.map(this::handleValidation)
 						  		 .orElseThrow(LocalEntityNotFoundException::new) ;	
 	}
@@ -48,7 +77,7 @@ public class ProjetService {
 	
 	
 	public Projet invalider (Projet projet) {
-		Optional<Projet> projectExistantOpt = projetRepository.findById(projet.getId()) ;
+		Optional<Projet> projectExistantOpt = projetRepository.findByCodeProjet(projet.getCodeProjet()) ;
 		
 		return projectExistantOpt.map(this::handleInvalidation)
 						  		 .orElseThrow(LocalEntityNotFoundException::new) ;	
@@ -67,7 +96,7 @@ public class ProjetService {
 	
 	
 	
-	public Projet rechercher (Long id) {
+	public Projet rechercher (String id) {
 		return  projetRepository.findById(id)
 								.map(Function.identity())
 								.orElseThrow(LocalEntityNotFoundException::new) ;
@@ -89,7 +118,7 @@ public class ProjetService {
 	}
 	
 	
-	public Projet rechercher (String codeProjet) {
+	public Projet rechercherCodeProjet (String codeProjet) {
 		return projetRepository.findByCodeProjet(codeProjet)
 							   .map(Function.identity())
 							   .orElseThrow(LocalEntityNotFoundException::new);

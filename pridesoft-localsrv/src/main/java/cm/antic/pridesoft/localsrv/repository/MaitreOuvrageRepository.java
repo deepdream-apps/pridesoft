@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import cm.antic.pridesoft.datamodel.local.MaitreOuvrage;
 
 @Repository
-public interface MaitreOuvrageRepository extends MongoRepository<MaitreOuvrage, Long>{
+public interface MaitreOuvrageRepository extends MongoRepository<MaitreOuvrage, String>{
 	public Optional<MaitreOuvrage> findBySigle (String sigle) ;
 }

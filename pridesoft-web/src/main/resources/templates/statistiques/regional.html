@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header ::header">
+</head>
+<body>
+	<!-- Top Bar Start -->
+	<div class="topbar">
+		<div th:replace="fragments/menus-bars ::top-menu"></div>
+		<div th:replace="fragments/menus-bars ::main-menu"></div>
+	</div>
+	<!-- Top Bar End -->
+	<!-- Page Content-->
+	<div class="wrapper">
+		<div class="container-fluid">
+			<div class="row" th:replace="fragments/menus-bars ::breadcrumb"></div>
+			<div class="row">
+				<div class="col-12">
+				<div th:replace="motscles/list ::mini-menu"></div>  
+					
+				</div>
+				<!-- end col -->
+			</div>
+			
+			<div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h5 class="mt-0">USA Map</h5>
+                                <p class="text-muted font-13 mb-4">Example of vector map.</p>
+
+                                <div id="usa" style="height: 400px"></div>
+
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h5 class="mt-0">UK Map</h5>
+                                <p class="text-muted font-13 mb-4">Example of vector map.</p>
+
+                                <div id="uk" style="height: 400px"></div>
+
+                            </div>
+                        </div>
+                    </div> <!-- end col -->                        
+                </div> <!-- end row -->
+		</div>
+		
+		 
+		
+		
+		<!-- container -->
+		<footer class="footer text-center text-sm-left"
+			th:replace="fragments/footer ::footer"> </footer>
+	</div>
+	<!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <!-- Jvector Map js -->
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="assets/plugins/jvectormap/gdp-data.js"></script>
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-us-aea-en.js"></script>
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-uk-mill-en.js"></script>
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-us-il-chicago-mill-en.js"></script>
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-ca-lcc.js"></script>
+        <script src="assets/pages/jquery.jvectormap.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+</body>
+</html>

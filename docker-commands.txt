@@ -1,0 +1,4 @@
+docker run -d --name pridesoft-mongodb -p 27017:27017  -v ./pridesoft-volumes/mongodb:/data/db  mongo:4.4
+docker run -d --name pridesoft-localsrv -p 0.0.0.0:9999:9999  -v /pridesoft-volumes/localsrv:/tmp  -e SPRING_DATA_MONGODB_URL=mongodb://localhost:27017/pridesoft  -e APP_REMOTESRV=localhost:10000 deepdreamapps/pridesoft-localsrv:0.0.1-SNAPSHOT
+docker run -d --name pridesoft-remotesrv -p 0.0.0.0:10000:10000  -v /pridesoft-volumes/remotesrv:/tmp   deepdreamapps/pridesoft-remotesrv:0.0.1-SNAPSHOT
+docker run -d --name pridesoft-web -p 0.0.0.0:8085:8085  -v /pridesoft-volumes/web:/tmp  -e APP_LOCALSRV=localhost:9999  -e APP_REMOTESRV=localhost:10000  deepdreamapps/pridesoft-web:0.0.1-SNAPSHOT

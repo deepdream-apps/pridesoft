@@ -18,12 +18,12 @@ public class CneRemoteService {
 	}
 	
 	
-	@Cacheable("cneByIDCache")
+	@Cacheable(cacheNames = "cneByIDCache", key = "#id")
 	public Optional<CneRemote> rechercher (Long id) {
 		return cneRemoteRepository.findById(id) ;
 	}
 	
-	@Cacheable("cneByDatesCache")
+	@Cacheable(cacheNames = "cneByDatesCache")
 	public List<CneRemote> rechercher (LocalDate date1, LocalDate date2){
 		return cneRemoteRepository.findByDateSignatureBetween(date1, date2) ;
 	}

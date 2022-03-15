@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import cm.antic.pridesoft.datamodel.local.Utilisateur;
 
 @Repository
-public interface UtilisateurRepository extends MongoRepository<Utilisateur, Long>{
+public interface UtilisateurRepository extends MongoRepository<Utilisateur, String>{
 	public Utilisateur findByLogin(String login) ;
 }

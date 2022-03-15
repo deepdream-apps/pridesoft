@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import cm.antic.pridesoft.datamodel.remote.PaysRemote;
@@ -26,6 +27,7 @@ public class RegionRemoteService {
 		return  regionRemoteRepository.findByCode(code) ;
 	}
 	
+	@Cacheable(cacheNames = "regions", key = "#pays.id")
 	public List<RegionRemote> rechercher (PaysRemote pays){
 		Iterable<RegionRemote> regions = regionRemoteRepository.findByPays(pays) ;
 		List<RegionRemote> listeRegions = new ArrayList<RegionRemote>() ;

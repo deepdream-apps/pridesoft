@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import cm.antic.pridesoft.datamodel.local.Projet;
 
 @Repository
-public interface ProjetRepository extends MongoRepository<Projet, Long>{
+public interface ProjetRepository extends MongoRepository<Projet, String>{
 	public Optional<Projet> findByCodeProjet (String codeProjet) ;
 	public List<Projet> findByDateSignatureBetween (LocalDate date1, LocalDate date2) ;
 	public List<Projet> findByValideAndDateSignatureBetween(Integer valide, LocalDate date1, LocalDate date2) ;

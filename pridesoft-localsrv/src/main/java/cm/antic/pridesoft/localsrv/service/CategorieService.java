@@ -2,6 +2,8 @@ package cm.antic.pridesoft.localsrv.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,7 +20,7 @@ public class CategorieService {
 	}
 	
 	
-	public Optional<Categorie> rechercher (Long id) {
+	public Optional<Categorie> rechercher (String id) {
 		return categorieRepository.findById(id) ;
 	}
 	
@@ -32,11 +34,16 @@ public class CategorieService {
 	
 	
 	public Categorie creer (Categorie categorie) {
+		categorie.setId(UUID.randomUUID().toString());
 		return categorieRepository.save(categorie) ;
 	}
 	
 	
-	public Categorie modifier (Categorie categorie) {
+	public Categorie modifier (Categorie categorieExistante) {
+		Categorie categorie = categorieRepository.findById(categorieExistante.getId())
+												 .orElseThrow(IllegalArgumentException::new) ;
+		categorie.setDescription(categorieExistante.getDescription());
+		categorie.setLibelle(categorieExistante.getLibelle()) ;
 		return categorieRepository.save(categorie) ;
 	}
 	

@@ -2,6 +2,7 @@ package cm.antic.pridesoft.localsrv.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ public class UtilisateurService {
 	
 	public Utilisateur creer (Utilisateur utilisateur) throws Exception {
 		try {
+			utilisateur.setId(UUID.randomUUID().toString());
 			Utilisateur utilisateurCree  = utilisateurRepository.save(utilisateur) ;
 			return utilisateurCree ;
 		}catch(Exception ex) {
@@ -47,7 +49,7 @@ public class UtilisateurService {
 	}
 	
 	
-	public Utilisateur rechercher (Long id) throws Exception {
+	public Utilisateur rechercher (String id) throws Exception {
 		try {
 			Optional<Utilisateur> utilisateurOpt  = utilisateurRepository.findById(id) ;
 			return utilisateurOpt.orElseThrow(Exception::new) ;
@@ -57,7 +59,7 @@ public class UtilisateurService {
 		}
 	}
 	
-	public Utilisateur rechercher (String login) throws Exception {
+	public Utilisateur rechercherLogin (String login) throws Exception {
 		try {
 			Utilisateur utilisateur  = utilisateurRepository.findByLogin(login) ;
 			return utilisateur ;
@@ -68,7 +70,7 @@ public class UtilisateurService {
 	}
 	
 	
-	public List<Utilisateur> rechercher (Utilisateur utilisateur) throws Exception {
+	public List<Utilisateur> rechercher (Utilisateur utilisateur)  {
 		try {
 			Iterable<Utilisateur> projets  = utilisateurRepository.findAll() ;
 			List<Utilisateur> listeProjets = new ArrayList<Utilisateur>() ;

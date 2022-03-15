@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import cm.antic.pridesoft.datamodel.local.Region;
 
 @Repository
-public interface RegionRepository extends MongoRepository<Region, Long>{
+public interface RegionRepository extends MongoRepository<Region, String>{
 	
 	public Region findByCode(String code);
 }

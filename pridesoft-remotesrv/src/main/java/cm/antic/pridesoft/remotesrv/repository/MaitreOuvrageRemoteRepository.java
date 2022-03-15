@@ -10,8 +10,7 @@ import org.springframework.stereotype.Repository;
 import cm.antic.pridesoft.datamodel.remote.MaitreOuvrageRemote;
 @Repository
 public interface MaitreOuvrageRemoteRepository extends CrudRepository<MaitreOuvrageRemote, Long>{
-	public Optional<MaitreOuvrageRemote> findByDesignation (String designation) ;
+	public Optional<MaitreOuvrageRemote> findByLibelle (String libelle) ;
 	public Optional<MaitreOuvrageRemote> findBySigle (String sigle) ;
 	
-	public List<MaitreOuvrageRemote> findByDateInsertionBetween(LocalDate date1, LocalDate date2) ;
 }

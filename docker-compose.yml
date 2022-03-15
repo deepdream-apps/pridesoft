@@ -1,0 +1,59 @@
+version: "3"  
+services:
+    pridesoft-mongodb:
+        image: mongo:4.4
+        container_name: pridesoft-mongodb
+        restart: always
+        ports:
+            - 27017:27017
+        volumes:
+             - ./pridesoft-volumes/mongodb:/data/db
+        networks:
+            - pridesoft-network
+        command: ["--bind_ip", "0.0.0.0"]
+    pridesoft-localsrv:
+        image: deepdreamapps/pridesoft-localsrv:0.0.1-SNAPSHOT
+        container_name: pridesoft-localsrv
+        ports:
+            - 9999:9999
+        environment: 
+            - SPRING_DATA_MONGODB_HOST=pridesoft-mongodb
+            - SPRING_DATA_MONGODB_PORT=27017
+            - SPRING_DATA_MONGODB_DATABASE=pridesoft
+            - APP_REMOTESRV_HOST=pridesoft-remotesrv
+            - APP_REMOTESRV_PORT=10000
+        depends_on: 
+            - pridesoft-remotesrv
+            - pridesoft-mongodb
+        networks:
+            - pridesoft-network
+        command: ["--bind_ip", "0.0.0.0"]
+    pridesoft-remotesrv:
+        image: deepdreamapps/pridesoft-remotesrv:0.0.1-SNAPSHOT
+        container_name: pridesoft-remotesrv
+        ports:
+            - 10000:10000
+        networks:
+            - pridesoft-network
+        command: ["--bind_ip", "0.0.0.0"]
+    pridesoft-web:
+        image: deepdreamapps/pridesoft-web:0.0.1-SNAPSHOT
+        container_name: pridesoft-web
+        ports:
+            - 8085:8085
+        environment:
+            - APP_LOCALSRV_HOST=pridesoft-localsrv
+            - APP_LOCALSRV_PORT=9999
+            - APP_REMOTESRV_HOST=pridesoft-remotesrv
+            - APP_REMOTESRV_PORT=10000
+        depends_on:
+            - pridesoft-remotesrv
+            - pridesoft-localsrv
+        networks:
+            - pridesoft-network
+        command: ["--bind_ip", "0.0.0.0"]
+networks:
+    pridesoft-network:
+        driver: bridge
+        
+        

@@ -1,0 +1,25 @@
+
+label{
+  font-size: 13px;
+  font-weight: 500;
+  color: $gray-600;
+}
+.form-control{
+  font-size: 13px;
+  height: 38px;
+  &:focus {
+    border-color: $gray-500;
+    box-shadow: none;
+  }
+}
+
+.input-group{
+  .input-group-text{
+    font-size: 13px;
+  }
+}
+
+dt {
+  font-weight: 500;
+}
+

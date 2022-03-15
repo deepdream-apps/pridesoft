@@ -1,4 +1,6 @@
 package cm.antic.pridesoft.localsrv.webservice;
+
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +12,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import cm.antic.pridesoft.datamodel.local.Utilisateur;
 import cm.antic.pridesoft.localsrv.service.UtilisateurService;
-
+import lombok.extern.log4j.Log4j2;
+@Log4j2
 @RestController
 @RequestMapping("/ws/utilisateur")
 public class UtilisateurWS {
@@ -60,7 +64,7 @@ public class UtilisateurWS {
 	
 	
 	@GetMapping("/id/{id}")
-	public Utilisateur rechercher(@PathVariable("id") Long id) {
+	public Utilisateur rechercher(@PathVariable("id") String id) {
 		try {
 			logger.log(Level.INFO, "Recerche du projet d'id "+id);
 			Utilisateur utilisateur = utilisateurService.rechercher(id) ;
@@ -73,10 +77,11 @@ public class UtilisateurWS {
 	
 	
 	@GetMapping("/login/{login}")
-	public Utilisateur rechercher(@PathVariable("login") String login) {
+	public Utilisateur rechercherLogin(@PathVariable("login") String login) {
 		try {
 			logger.log(Level.INFO, "Recerche de l'utilisateur login "+login);
-			Utilisateur utilisateur = utilisateurService.rechercher(login) ;
+			Utilisateur utilisateur = utilisateurService.rechercherLogin(login) ;
+			log.info("utilisateur="+utilisateur);
 			return utilisateur ;
 		}catch(Exception ex) {
 			logger.log(Level.SEVERE, ex.getMessage());
@@ -84,11 +89,20 @@ public class UtilisateurWS {
 		}
 	}
 	
+	
+	
+	@GetMapping("/all")
+	public List<Utilisateur> rechercherTout() {
+		return utilisateurService.rechercher(new Utilisateur()) ;
+	}
+	
+	
 	@GetMapping("/login/{login}/profil/{profil}")
 	public Utilisateur rechercher(@PathVariable("login") String login, @PathVariable("profil") String profil) {
 		try {
 			logger.log(Level.INFO, "Recerche de l'utilisateur login "+login);
 			Utilisateur utilisateur = utilisateurService.rechercher(login) ;
+			
 			return utilisateur ;
 		}catch(Exception ex) {
 			logger.log(Level.SEVERE, ex.getMessage());

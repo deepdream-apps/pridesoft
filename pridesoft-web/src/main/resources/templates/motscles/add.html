@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header ::header">
+</head>
+<body>
+	<!-- Top Bar Start -->
+	<div class="topbar">
+		<div th:replace="fragments/menus-bars ::top-menu"></div>
+		<div th:replace="fragments/menus-bars ::main-menu"></div>
+	</div>
+	<!-- Top Bar End -->
+	<!-- Page Content-->
+	<div class="wrapper">
+		<div class="container-fluid">
+			<div class="row" th:replace="fragments/menus-bars ::breadcrumb"></div>
+			<div class="row">
+				<div class="col-12">
+				<div th:replace="motscles/list ::mini-menu"></div>  
+					<div class="card">
+						<div class="card-body">
+							<h5 class="mt-0">Nouveau Mot Clé de filtrage</h5>
+							<p class="text-muted font-13 mb-4">Mot clé permettant le
+								filtrage des projets dans le système d'information des marchés
+								publics du Cameroun.</p>
+								
+							<form action="#" th:action="@{/motscles/ajout}" method="POST" th:object="${motCle}">
+								<div class="row">
+									<div class="col-md-6"> 
+										<div class="p-20">
+											<div class="form-group">
+												<label>Libellé</label> <input th:field="*{libelle}" name="libelle" type="text" placeholder=""
+													class="form-control">
+												<span class="font-13 text-muted">Exemple "Sécurité"</span>
+											</div>
+											<div class="form-group">
+												<label>Statut</label> <select   th:field="*{statut}" name="statut" class="form-control">
+													
+													<option value="1">Actif</option>
+													<option value="0">Inactif</option>
+												</select> <span class="font-13 text-muted">Statut du mot clé</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="p-20">
+											<div class="form-group">
+												<label>Description</label>
+												<textarea th:field="*{description}" name="description" class="form-control"></textarea>
+												<span class="font-13 text-muted">Description du mot 
+													clé</span>
+											</div>
+										</div>
+									</div>
+									<!-- end col -->
+									<div class="col-sm-12">
+										<input type="submit" value="Ajouter" class="btn btn-success">
+										<input type="reset" value="Reinitialiser"
+											class="btn btn-light">
+									</div>
+								</div>
+								<!-- end row -->
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- end col -->
+			</div>
+		</div>
+		<!-- container -->
+		<footer class="footer text-center text-sm-left"
+			th:replace="fragments/footer ::footer"> </footer>
+	</div>
+	<!-- end page-wrapper -->
+	<!-- jQuery  -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/waves.min.js"></script>
+	<script src="/js/jquery.slimscroll.min.js"></script>
+	<script src="/plugins/chartist/js/chartist.min.js"></script>
+	<script src="/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+	<script src="/plugins/morris/morris.min.js"></script>
+	<script src="/plugins/raphael/raphael-min.js"></script>
+	<script src="/plugins/peity-chart/jquery.peity.min.js"></script>
+	<script src="/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+	<script src="/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+	<script src="/pages/jquery.dashboard2.init.js"></script>
+	<!-- App js -->
+	<script src="/js/app.js"></script>
+</body>
+</html>

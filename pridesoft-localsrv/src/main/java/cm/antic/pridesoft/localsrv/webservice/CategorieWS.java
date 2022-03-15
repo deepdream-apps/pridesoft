@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.function.Function;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -43,21 +44,21 @@ public class CategorieWS {
 	}
 	
 	
-	@PutMapping("/suppression")
+	@DeleteMapping("/suppression")
 	public void supprimer (@RequestBody Categorie categorie) {
 		 categorieService.supprimer(categorie) ;
 	}
 	
 	
 	@GetMapping("/id/{id}")
-	public Categorie rechercher(@PathVariable("id") Long id) {
+	public Categorie rechercher(@PathVariable("id") String id) {
 		log.info(String.format("Recherche de la categorie d'id %s", id));
 		return categorieService.rechercher(id)
 							   .map(Function.identity())
 							   .orElseThrow(LocalEntityNotFoundException::new) ;
 	}
 	
-	@GetMapping("/all")
+	@GetMapping("/liste")
 	public List<Categorie> getCategories() {
 		return categorieService.rechercherTout() ;
 	}

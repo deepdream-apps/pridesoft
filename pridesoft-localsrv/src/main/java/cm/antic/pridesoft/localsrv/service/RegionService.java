@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
@@ -26,6 +27,7 @@ public class RegionService {
 	
 	
 	public Region creer (Region region) {
+		region.setId(UUID.randomUUID().toString());
 		return regionRepository.save(region) ;
 	}
 	
@@ -35,12 +37,17 @@ public class RegionService {
 	}
 	
 	
+	public Region creerOuModifier (Region region) {
+		return regionRepository.save(region) ;
+	}
+	
+	
 	public void supprimer (Region region) {
 		regionRepository.delete(region) ;
 	}
 	
 	
-	public Optional<Region> rechercher (Long id) {
+	public Optional<Region> rechercher (String id) {
 		return regionRepository.findById(id) ;
 	}
 	
@@ -51,21 +58,5 @@ public class RegionService {
 		regions.forEach(listeRegions::add);
 		return listeRegions ;
 	}
-	
-	
-	
-	public List<Region>  charger(List<RegionRemote> listeRegionsR) {
-		return listeRegionsR.stream()
-				.peek(region -> log.info(String.format("Chargement de %s - %s", region.getCode(), region.getLibelle())))
-				.map(regionR -> {
-					Region region = new Region();
-					region.setId(regionR.getId());
-					region.setLibelle(regionR.getLibelle());
-					region.setCode(regionR.getCode());
-					return regionRepository.save(region);
-			  }).collect(Collectors.toList()) ;
-	}
-	
-	
 	
 }

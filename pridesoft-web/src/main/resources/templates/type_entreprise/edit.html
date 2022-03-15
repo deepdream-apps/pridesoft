@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header ::header">
+</head>
+<body>
+	<!-- Top Bar Start -->
+	<div class="topbar">
+		<div th:replace="fragments/menus-bars ::top-menu"></div>
+		<div th:replace="fragments/menus-bars ::main-menu"></div>
+	</div>
+	<!-- Top Bar End -->
+	<!-- Page Content-->
+	<div class="wrapper">
+	
+		<div class="container-fluid">
+			<div class="row" th:replace="fragments/menus-bars ::breadcrumb"></div>
+			<div class="row">
+				<div class="col-md-12">
+				<div th:replace="type_entreprise/list ::mini-menu"></div>
+					<div class="card">
+						<div class="card-body">
+							
+							<h5 class="mt-0">Modification de type d'entreprise</h5>
+							<form action="#" th:action="@{/type-entreprise/edit}" method="POST" th:object="${typeEntrepriseExistant}">
+								<div class="row">
+									<div class="col-md-6"> 
+										<div class="p-20">
+											<input th:field="*{id}" name="libelle" type="text" placeholder="" hidden class="form-control">
+											<div class="form-group">
+												<label>Libellé</label> <input th:field="*{libelle}" name="libelle" type="text" placeholder=""
+													class="form-control">
+												<span class="font-13 text-muted"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="p-20">
+											<div class="form-group">
+												<label>Description</label>
+												<textarea th:field="*{description}" name="description" class="form-control"></textarea>
+												<span class="font-13 text-muted"></span>
+											</div>
+										</div>
+									</div>
+									<!-- end col -->
+									<div class="col-sm-12">
+										<input type="submit" value="Mettre à jour" class="btn btn-success">
+									</div>
+								</div>
+								<!-- end row -->
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- end col -->
+			</div>
+		</div>
+		<!-- container -->
+		<footer class="footer text-center text-sm-left"
+			th:replace="fragments/footer ::footer"> </footer>
+	</div>
+	<!-- end page-wrapper -->
+	<!-- jQuery  -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/waves.min.js"></script>
+	<script src="/js/jquery.slimscroll.min.js"></script>
+	<!-- Required datatable js -->
+	<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+	<!-- Buttons examples -->
+	<script src="/plugins/datatables/dataTables.buttons.min.js"></script>
+	<script src="/plugins/datatables/buttons.bootstrap4.min.js"></script>
+	<script src="/plugins/datatables/jszip.min.js"></script>
+	<script src="/plugins/datatables/pdfmake.min.js"></script>
+	<script src="/plugins/datatables/vfs_fonts.js"></script>
+	<script src="/plugins/datatables/buttons.html5.min.js"></script>
+	<script src="/plugins/datatables/buttons.print.min.js"></script>
+	<script src="/plugins/datatables/buttons.colVis.min.js"></script>
+	<!-- Responsive examples -->
+	<script src="/plugins/datatables/dataTables.responsive.min.js"></script>
+	<script src="/plugins/datatables/responsive.bootstrap4.min.js"></script>
+	<!-- Datatable init js -->
+	<script src="/pages/jquery.table-datatable.js"></script>
+	<!-- App js -->
+	<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 package cm.antic.pridesoft.localsrv.webservice;
 import java.io.IOException;
+
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDate;
@@ -12,9 +13,7 @@ import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -53,22 +52,6 @@ public class ProjetWS {
 		return projetService.modifier(projet) ;
 	}
 	
-	
-	@DeleteMapping("/id/{id}")
-	public void supprimer (@PathVariable("id") Long id) {
-		log.info("Suppression du projet");
-		Projet projet = Projet.builder()
-				.id(id)
-				.build() ;
-		projetService.supprimer(projet) ;
-	}
-	
-	
-	@GetMapping("/id/{id}")
-	public Projet rechercherId(@PathVariable("id") Long id) {
-		log.info("Recherche du projet d'id %s", id);
-		return projetService.rechercher(id) ;
-	}
 	
 	
 	@GetMapping("/codeprojet/{codeProjet}")
@@ -111,7 +94,7 @@ public class ProjetWS {
 	}
 	
 	
-	@GetMapping("/{dateDebut}/{dateFin}")
+	@GetMapping("/periode/{dateDebut}/{dateFin}")
 	public List<Projet> rechercher(@PathVariable("dateDebut") String dateDebut, 
 			@PathVariable("dateFin") String dateFin) {
 		log.info(String.format("Recerche des projets de %s à %s", dateDebut, dateFin));
@@ -122,19 +105,18 @@ public class ProjetWS {
 	}
 	
 	
-	@GetMapping("/telechargement/{dateDebut}/{dateFin}")
+	@GetMapping("/telechargement/periode/{dateDebut}/{dateFin}")
 	public List<Projet> telecharger (@PathVariable("dateDebut") String dateDebut, 
 			@PathVariable("dateFin") String dateFin) throws IOException{
-		try (Stream<String> streamMotsCle = Files.lines(Paths.get(new ClassPathResource(
-	    	      "data/keywords").getFile().getAbsolutePath()))){
+		try (Stream<String> streamMotsCle = Files.lines(Paths.get(env.getProperty("app.localsrv.path.data.keyworks")))){
 			log.info(String.format("Recherche de la liste des projets de %s  a %s", dateDebut, dateFin)) ;
-					
-			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy") ;
-			LocalDate debut = LocalDate.parse(dateDebut, formatter) ;
-			LocalDate fin = LocalDate.parse(dateFin, formatter) ;
+
+			List<String> listeMotsCles = streamMotsCle.collect(Collectors.toList()) ;
 			
-			ResponseEntity<ProjetRemote[]> response = rest.getForEntity("http://"+env.getProperty("app.remotesrv")+"/projet/{date1}/{date2}", 
-					ProjetRemote[].class, debut, fin) ;
+			String remoteUrl = "http://"+env.getProperty("app.remotesrv.host")+":"+env.getProperty("app.remotesrv.port") ;
+			
+			ResponseEntity<ProjetRemote[]> response = rest.getForEntity(remoteUrl+"/ws/projet/periode/{date1}/{date2}", 
+					ProjetRemote[].class, dateDebut, dateFin) ;
 			
 			List<ProjetRemote> listeProjets = Arrays.asList(response.getBody());
 			
@@ -142,10 +124,10 @@ public class ProjetWS {
 			
 			List<ProjetRemote> listeProjetsFiltres = listeProjets.stream()
 					.filter(projet -> {
-						return streamMotsCle.anyMatch(motCle -> projet.getDesignation().contains(motCle)) ;
+						return listeMotsCles.parallelStream().anyMatch(motCle -> projet.getDesignation().toLowerCase().contains(motCle)) ;
 					}).collect(Collectors.toList()) ;
 			
-			return listeProjetsFiltres.stream()
+			return listeProjetsFiltres.parallelStream()
 							   .map(projetR  -> {
 								    Projet projet = Projet.builder()
 								    		.libelle(projetR.getDesignation())
@@ -155,9 +137,9 @@ public class ProjetWS {
 								    		.idRegion(projetR.getRegion() == null ? null : projetR.getRegion().getId())
 								    		.libelleRegion(projetR.getRegion() == null ? null : projetR.getRegion().getLibelle())
 								    		.idMaitreOuvrage(projetR.getMaitreOuvrage() == null ? null :  projetR.getMaitreOuvrage().getId())
-								    		.sigleMaitreOuvrage(projetR.getMaitreOuvrage() == null ? null : projetR.getMaitreOuvrage().getDesignation())
+								    		.libelleMaitreOuvrage(projetR.getMaitreOuvrage() == null ? null : projetR.getMaitreOuvrage().getLibelle())
 								    		.build() ;
-								    return projetService.creer(projet) ;
+								    return projetService.creerEtValider(projet) ;
 							   }).collect(Collectors.toList()) ;
 			
 		}catch(IOException ex) {

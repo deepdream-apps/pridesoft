@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import cm.antic.pridesoft.datamodel.local.Categorie;
 @Repository
-public interface CategorieRepository extends MongoRepository<Categorie, Long>{
+public interface CategorieRepository extends MongoRepository<Categorie, String>{
 	
 	
 }

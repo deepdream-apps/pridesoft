@@ -35,6 +35,7 @@ public class ProjetRemoteWS {
 				                  .orElseThrow(RemoteEntityNotFoundException::new) ;
 	}
 	
+	
 	@GetMapping("/periode/{dateDebut}/{dateFin}")
 	public List<ProjetRemote> getProjets (@PathVariable("dateDebut") String dateDebut, @PathVariable("dateFin") String dateFin) {
 		log.info(String.format("Recherche des projets du %s au %s", dateDebut, dateFin));

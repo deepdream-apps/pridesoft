@@ -1,0 +1,33 @@
+version: "3"  
+services:
+    pridesoft-localsrv:
+        image: pridesoft-localsrv:0.0.1-SNAPSHOT
+        ports:
+            - "9999:9999"
+        depends_on: 
+            - pridesoft-remotesrv
+        environment:
+            -JAVA_OPTS:
+                -DPRIDESOFT_LOCALDB_URI=mongodb://localhost:27017/pridesoft
+                -DPRIDESOFT_LOCALDB_NAME=pridesoft
+                -DPRIDESOFT_REMOTESRV_URI=localhost:10000
+    pridesoft-remotesrv:
+        image: pridesoft-remotesrv:0.0.1-SNAPSHOT
+        ports:
+            - "10000:10000"
+        environment:
+            -JAVA_OPTS:
+                -DPRIDESOFT_REMOTEDB_URL=jdbc:postgresql://pridesoft.cm:5432/training
+                -DPRIDESOFT_REMOTEDB_USERNAME=antic
+                -DPRIDESOFT_REMOTEDB_PASSWORD=21Armp$#
+    pridesoft-web:
+        image: pridesoft-web:0.0.1-SNAPSHOT
+        ports:
+            - "8085:8085"
+        depends_on:
+            - pridesoft-remotesrv
+            - pridesoft-localsrv
+        environment:
+            -JAVA_OPTS:
+                -DPRIDESOFT_LOCALSRV_URI=localhost:9999
+                -DPRIDESOFT_REMOTESRV_URI=localhost:10000
