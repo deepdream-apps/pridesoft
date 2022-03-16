@@ -23,6 +23,8 @@ public class Utilisateur implements Serializable{
 	private String motDePasse ;
 
 	private String profil ;
+	
+	private LocalDateTime dateCreation ;
 
 	private LocalDateTime dateExpiration ;
 
