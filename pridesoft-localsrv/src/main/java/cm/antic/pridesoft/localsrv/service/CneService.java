@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import cm.antic.pridesoft.datamodel.exceptions.LocalEntityNotFoundException;
 import cm.antic.pridesoft.datamodel.local.Cne;
 import cm.antic.pridesoft.datamodel.local.ProjetTic;
+import cm.antic.pridesoft.datatransfer.enums.TypeProjet;
 import cm.antic.pridesoft.localsrv.repository.CneRepository;
 import cm.antic.pridesoft.localsrv.repository.ProjetTicRepository;
 
@@ -35,20 +36,19 @@ public class CneService {
 	
 	public Cne creerEtValider (Cne cne) {
 		Cne cneCree = cneRepository.save(cne) ;
-		ProjetTic projetTic = ProjetTic.builder()
-				.codeProjet(cne.getCodeProjet())
-			    .libelle(cne.getLibelle())
-			    .dateSignature(cne.getDateSignature())
-			    .montant(cne.getMontant())
-			    .idRegion(cne.getIdRegion())
-			    .libelleRegion(cne.getLibelleRegion())
-			    .idMaitreOuvrage(cne.getIdMaitreOuvrage())
-			    .libelleMaitreOuvrage(cne.getLibelleMaitreOuvrage())
-			    .idCategorie(cne.getIdCategorie())
-			    .libelleCategorie(cne.getLibelleCategorie())
-			    .idSecteurActivite(cne.getIdSecteurActivite())
-			    .libelleSecteurActivite(cne.getLibelleSecteurActivite())
-			    .build() ;
+		ProjetTic projetTic = projetTicRepository.findByCodeProjet(cne.getCodeProjet()) 
+					.orElse(new ProjetTic()) ;
+		
+		projetTic.setCodeProjet(cne.getCodeProjet()) ;
+		projetTic.setLibelle(cne.getLibelle()) ;
+		projetTic.setType(TypeProjet.BONDECOMMANDE.getLibelle()) ;
+		projetTic.setDateSignature(cne.getDateSignature()) ;
+		projetTic.setMontant(cne.getMontant()) ;
+		projetTic.setIdRegion(cne.getIdRegion()) ;
+		projetTic.setLibelleRegion(cne.getLibelleRegion()) ;
+		projetTic.setIdMaitreOuvrage(cne.getIdMaitreOuvrage()) ;
+		projetTic.setLibelleMaitreOuvrage(cne.getLibelleMaitreOuvrage()) ;
+
 		projetTicRepository.save(projetTic) ;
 		
 		return cneCree ;

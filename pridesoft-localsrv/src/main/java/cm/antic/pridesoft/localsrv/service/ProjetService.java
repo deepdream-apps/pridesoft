@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import cm.antic.pridesoft.datamodel.exceptions.LocalEntityNotFoundException;
 import cm.antic.pridesoft.datamodel.local.Projet;
 import cm.antic.pridesoft.datamodel.local.ProjetTic;
+import cm.antic.pridesoft.datatransfer.enums.TypeProjet;
 import cm.antic.pridesoft.localsrv.repository.ProjetRepository;
 import cm.antic.pridesoft.localsrv.repository.ProjetTicRepository;
 import lombok.extern.log4j.Log4j2;
@@ -39,20 +40,19 @@ public class ProjetService {
 	public Projet creerEtValider (Projet projet)  {
 		projet.setValide(1) ;
 		Projet projetCree = projetRepository.save(projet) ;
-		ProjetTic projetTic = ProjetTic.builder()
-								.codeProjet(projet.getCodeProjet())
-							    .libelle(projet.getLibelle())
-							    .dateSignature(projet.getDateSignature())
-							    .montant(projet.getMontant())
-							    .idRegion(String.valueOf(projet.getIdRegion()))
-							    .libelleRegion(projet.getLibelleRegion())
-							    .idMaitreOuvrage(String.valueOf(projet.getIdMaitreOuvrage()))
-							    .libelleMaitreOuvrage(projet.getLibelleMaitreOuvrage())
-							    //.idCategorie(String.valueOf(projet.getIdCategorie()))
-							    //.libelleCategorie(projet.getLibelleCategorie())
-							    //.idSecteurActivite(String.valueOf(projet.getIdSecteurActivite()))
-							    //.libelleSecteurActivite(projet.getLibelleSecteurActivite())
-							    .build() ;
+		ProjetTic projetTic = projetTicRepository.findByCodeProjet(projet.getCodeProjet())
+					.orElse(new ProjetTic()) ;
+		
+		projetTic.setCodeProjet(projet.getCodeProjet()) ;
+		projetTic.setLibelle(projet.getLibelle()) ;
+		projetTic.setType(TypeProjet.MARCHE.getLibelle()) ;
+		projetTic.setDateSignature(projet.getDateSignature()) ;
+		projetTic.setMontant(projet.getMontant()) ;
+		projetTic.setIdRegion(String.valueOf(projet.getIdRegion())) ;
+		projetTic.setLibelleRegion(projet.getLibelleRegion()) ;
+		projetTic.setIdMaitreOuvrage(String.valueOf(projet.getIdMaitreOuvrage())) ;
+		projetTic.setLibelleMaitreOuvrage(projet.getLibelleMaitreOuvrage()) ;
+		
 		projetTicRepository.save(projetTic) ;
 		return projetCree ;
 	}

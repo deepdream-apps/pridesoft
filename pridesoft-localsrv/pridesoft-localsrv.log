@@ -10,3 +10,316 @@
 2022-03-17 09:21:48.229  INFO 5944 --- [main] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des CNE Pridesoft 2022-03-17T09:21:48.226165600
 2022-03-17 09:21:48.230  INFO 5944 --- [main] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la r�cup�ration des projets Pridesoft 2022-03-17T09:21:48.230161600
 2022-03-17 09:21:49.308  INFO 5944 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:25:30.657  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:25:30.665  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:25:30.794  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-17 16:25:30.794  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-17 16:25:31.708  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:25:31.845  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:25:33.202  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:25:33.223  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:25:33.224  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:25:33.442  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:25:33.443  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2649 ms
+2022-03-17 16:25:33.741  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:25:33.841  INFO 1392 --- [cluster-ClusterId{value='623352ed40ede737bdcc78db', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:26}] to localhost:27017
+2022-03-17 16:25:33.853  INFO 1392 --- [cluster-ClusterId{value='623352ed40ede737bdcc78db', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7802800}
+2022-03-17 16:25:34.059  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:25:35.066  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:25:35.534  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:25:35.553  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 5.56 seconds (JVM running for 6.575)
+2022-03-17 16:25:35.571  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:25:35.568271100
+2022-03-17 16:25:35.573  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:25:35.573270700
+2022-03-17 16:25:45.766  INFO 1392 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-17 16:25:45.766  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-17 16:25:45.779  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-03-17 16:25:45.830  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-17 16:25:45.919  INFO 1392 --- [http-nio-9999-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:27}] to localhost:27017
+2022-03-17 16:25:46.016  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-17 16:25:46.298  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-17 16:25:46.303  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-17 16:25:46.311  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-17 16:25:46.619  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:25:47.279  INFO 1392 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:25:47.287  INFO 1392 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:25:47.455  INFO 1392 --- [http-nio-9999-exec-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:28}] to localhost:27017
+2022-03-17 16:26:09.071  INFO 1392 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
+2022-03-17 16:26:09.106  INFO 1392 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.ProjetWS       : Nombre de projets recuperees : 113
+2022-03-17 16:26:28.710  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2021  a 31-12-2022
+2022-03-17 16:29:15.146  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Nombre de projets recuperees : 7713
+2022-03-17 16:29:15.627  INFO 1392 --- [ForkJoinPool.commonPool-worker-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:30}] to localhost:27017
+2022-03-17 16:29:15.627  INFO 1392 --- [ForkJoinPool.commonPool-worker-9] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:29}] to localhost:27017
+2022-03-17 16:29:15.627  INFO 1392 --- [ForkJoinPool.commonPool-worker-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:31}] to localhost:27017
+2022-03-17 16:29:15.635  INFO 1392 --- [ForkJoinPool.commonPool-worker-11] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:33}] to localhost:27017
+2022-03-17 16:29:15.636  INFO 1392 --- [ForkJoinPool.commonPool-worker-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:32}] to localhost:27017
+2022-03-17 16:29:15.635  INFO 1392 --- [ForkJoinPool.commonPool-worker-13] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:34}] to localhost:27017
+2022-03-17 16:29:22.855  INFO 1392 --- [http-nio-9999-exec-10] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-17 16:29:22.860  INFO 1392 --- [http-nio-9999-exec-10] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-17 16:29:22.864  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-17 16:29:22.926  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:29:23.290  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:29:23.310  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:30:22.770  INFO 1392 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:30:22.793  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:27}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:22.795  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:28}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:22.795  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:6, serverValue:33}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:22.796  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:7, serverValue:34}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:22.796  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:8, serverValue:31}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:22.798  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:29}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:22.798  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:5, serverValue:32}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:22.799  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:9, serverValue:30}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:30:23.174  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:30:23.181  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:30:24.161  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:30:24.250  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:30:25.266  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:30:25.269  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:30:25.272  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:30:25.493  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:30:25.494  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2145 ms
+2022-03-17 16:30:25.614  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:30:25.677  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:30:26.212  INFO 1392 --- [cluster-ClusterId{value='6233541140ede737bdcc78dc', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:35}] to localhost:27017
+2022-03-17 16:30:26.312  INFO 1392 --- [cluster-ClusterId{value='6233541140ede737bdcc78dc', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=97808600}
+2022-03-17 16:30:26.674  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:30:26.893  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:30:26.913  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 3.902 seconds (JVM running for 297.935)
+2022-03-17 16:30:26.917  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:30:26.917575800
+2022-03-17 16:30:26.918  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:30:26.918575900
+2022-03-17 16:30:26.933  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:30:32.515  INFO 1392 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:30:32.627  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:30:32.627  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:30:33.089  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:30:33.350  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 260ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:30:34.220  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:30:34.222  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:30:34.223  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:30:34.583  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:30:34.584  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1952 ms
+2022-03-17 16:30:34.800  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:30:35.104  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:30:36.321  INFO 1392 --- [cluster-ClusterId{value='6233541a40ede737bdcc78dd', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:11, serverValue:37}] to localhost:27017
+2022-03-17 16:30:36.486  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:30:37.243  INFO 1392 --- [cluster-ClusterId{value='6233541a40ede737bdcc78dd', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=921857000}
+2022-03-17 16:30:37.450  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:30:37.455  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 4.886 seconds (JVM running for 308.478)
+2022-03-17 16:30:37.458  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:30:37.457795800
+2022-03-17 16:30:37.458  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:30:37.458793900
+2022-03-17 16:30:37.462  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:31:19.408  INFO 1392 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:31:19.582  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:31:19.583  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:31:20.067  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:31:20.123  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:31:20.371  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:31:20.372  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:31:20.373  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:31:20.527  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:31:20.528  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 939 ms
+2022-03-17 16:31:20.653  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:31:20.726  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:31:20.775  INFO 1392 --- [cluster-ClusterId{value='6233544840ede737bdcc78de', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:12, serverValue:41}] to localhost:27017
+2022-03-17 16:31:20.783  INFO 1392 --- [cluster-ClusterId{value='6233544840ede737bdcc78de', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7342200}
+2022-03-17 16:31:21.206  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:31:21.492  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:31:21.498  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 2.016 seconds (JVM running for 352.52)
+2022-03-17 16:31:21.501  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:31:21.500950
+2022-03-17 16:31:21.503  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:31:21.503949900
+2022-03-17 16:31:21.516  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:31:37.676  INFO 1392 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:31:37.741  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:31:37.742  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:31:37.864  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:31:37.896  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:31:38.065  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:31:38.067  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:31:38.067  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:31:38.121  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:31:38.121  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2022-03-17 16:31:38.148  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:31:38.169  INFO 1392 --- [cluster-ClusterId{value='6233545a40ede737bdcc78df', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:13, serverValue:44}] to localhost:27017
+2022-03-17 16:31:38.174  INFO 1392 --- [cluster-ClusterId{value='6233545a40ede737bdcc78df', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4142400}
+2022-03-17 16:31:38.178  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:31:38.423  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:31:38.580  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:31:38.586  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.868 seconds (JVM running for 369.607)
+2022-03-17 16:31:38.587  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:31:38.587385400
+2022-03-17 16:31:38.588  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:31:38.588387400
+2022-03-17 16:31:38.590  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:31:55.020  INFO 1392 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:31:55.118  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:31:55.119  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:31:55.336  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:31:55.367  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:31:55.537  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:31:55.538  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:31:55.538  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:31:55.630  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:31:55.631  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 507 ms
+2022-03-17 16:31:55.666  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:31:55.678  INFO 1392 --- [cluster-ClusterId{value='6233546b40ede737bdcc78e0', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:14, serverValue:47}] to localhost:27017
+2022-03-17 16:31:55.683  INFO 1392 --- [cluster-ClusterId{value='6233546b40ede737bdcc78e0', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4437500}
+2022-03-17 16:31:55.728  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:31:56.176  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:31:56.489  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:31:56.497  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.412 seconds (JVM running for 387.519)
+2022-03-17 16:31:56.500  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:31:56.500804700
+2022-03-17 16:31:56.500  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:31:56.500804700
+2022-03-17 16:31:56.507  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:32:05.472  INFO 1392 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:32:05.719  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:32:05.719  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:32:06.081  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:32:06.127  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:32:06.484  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:32:06.488  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:32:06.488  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:32:06.726  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:32:06.726  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
+2022-03-17 16:32:06.816  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:32:06.844  INFO 1392 --- [cluster-ClusterId{value='6233547640ede737bdcc78e1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:15, serverValue:50}] to localhost:27017
+2022-03-17 16:32:06.854  INFO 1392 --- [cluster-ClusterId{value='6233547640ede737bdcc78e1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9326000}
+2022-03-17 16:32:06.854  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:32:08.990  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:32:09.360  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:32:09.365  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 3.771 seconds (JVM running for 400.387)
+2022-03-17 16:32:09.367  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:32:09.367234900
+2022-03-17 16:32:09.368  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:32:09.368233900
+2022-03-17 16:32:09.372  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:32:15.862  INFO 1392 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:32:16.112  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:32:16.113  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:32:16.592  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:32:16.649  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:32:16.911  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:32:16.917  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:32:16.920  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:32:17.058  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:32:17.059  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 940 ms
+2022-03-17 16:32:17.092  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:32:17.101  INFO 1392 --- [cluster-ClusterId{value='6233548140ede737bdcc78e2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:16, serverValue:53}] to localhost:27017
+2022-03-17 16:32:17.104  INFO 1392 --- [cluster-ClusterId{value='6233548140ede737bdcc78e2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2689500}
+2022-03-17 16:32:17.126  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:32:17.436  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:32:17.602  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:32:17.605  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.616 seconds (JVM running for 408.627)
+2022-03-17 16:32:17.606  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:32:17.606389400
+2022-03-17 16:32:17.607  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:32:17.606389400
+2022-03-17 16:32:17.609  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:33:06.366  INFO 1392 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:33:16.159  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:33:16.159  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:33:16.284  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:33:16.305  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:33:16.395  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:33:16.396  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:33:16.396  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:33:16.441  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:33:16.441  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 280 ms
+2022-03-17 16:33:16.459  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:33:16.464  INFO 1392 --- [cluster-ClusterId{value='623354bc40ede737bdcc78e4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:18, serverValue:57}] to localhost:27017
+2022-03-17 16:33:16.466  INFO 1392 --- [cluster-ClusterId{value='623354bc40ede737bdcc78e4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1789400}
+2022-03-17 16:33:16.478  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:33:16.641  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:33:16.697  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:33:16.699  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.572 seconds (JVM running for 467.721)
+2022-03-17 16:33:16.700  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:33:16.700299300
+2022-03-17 16:33:16.700  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:33:16.700299300
+2022-03-17 16:33:16.702  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:33:28.532  INFO 1392 --- [Thread-41] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:33:28.628  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:33:28.628  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:33:28.825  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:33:28.871  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:33:29.130  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:33:29.132  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:33:29.133  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:33:29.268  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:33:29.268  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 637 ms
+2022-03-17 16:33:29.305  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:33:29.313  INFO 1392 --- [cluster-ClusterId{value='623354c940ede737bdcc78e5', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:19, serverValue:58}] to localhost:27017
+2022-03-17 16:33:29.317  INFO 1392 --- [cluster-ClusterId{value='623354c940ede737bdcc78e5', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3280200}
+2022-03-17 16:33:29.339  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:33:29.591  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:33:29.694  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:33:29.696  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.101 seconds (JVM running for 480.718)
+2022-03-17 16:33:29.697  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:33:29.697477800
+2022-03-17 16:33:29.698  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:33:29.698476200
+2022-03-17 16:33:29.701  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:33:54.267  INFO 1392 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-17 16:33:54.267  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-17 16:33:54.268  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-17 16:33:54.270  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-17 16:33:54.275  INFO 1392 --- [http-nio-9999-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:20, serverValue:59}] to localhost:27017
+2022-03-17 16:33:54.286  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-17 16:33:54.292  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-17 16:33:54.366  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:33:54.678  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:33:54.685  INFO 1392 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:33:54.696  INFO 1392 --- [http-nio-9999-exec-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:21, serverValue:60}] to localhost:27017
+2022-03-17 16:34:22.928  INFO 1392 --- [Thread-49] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:34:22.929  INFO 1392 --- [Thread-49] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:21, serverValue:60}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:34:22.931  INFO 1392 --- [Thread-49] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:20, serverValue:59}] to localhost:27017 because the pool has been closed.
+2022-03-17 16:34:23.022  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:34:23.022  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:34:23.155  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:34:23.176  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:34:23.261  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:34:23.262  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:34:23.262  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:34:23.303  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:34:23.303  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 279 ms
+2022-03-17 16:34:23.320  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:34:23.324  INFO 1392 --- [cluster-ClusterId{value='623354ff40ede737bdcc78e6', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:22, serverValue:61}] to localhost:27017
+2022-03-17 16:34:23.326  INFO 1392 --- [cluster-ClusterId{value='623354ff40ede737bdcc78e6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1452000}
+2022-03-17 16:34:23.335  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:34:23.453  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:34:23.495  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:34:23.497  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.509 seconds (JVM running for 534.518)
+2022-03-17 16:34:23.498  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:34:23.497179500
+2022-03-17 16:34:23.498  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:34:23.498179600
+2022-03-17 16:34:23.499  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:34:41.586  INFO 1392 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:34:41.681  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-17 16:34:41.681  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-17 16:34:41.803  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-17 16:34:41.818  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 11 MongoDB repository interfaces.
+2022-03-17 16:34:41.895  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-17 16:34:41.896  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-17 16:34:41.896  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-17 16:34:41.940  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-03-17 16:34:41.940  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 257 ms
+2022-03-17 16:34:41.960  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-17 16:34:41.964  INFO 1392 --- [cluster-ClusterId{value='6233551140ede737bdcc78e7', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:23, serverValue:62}] to localhost:27017
+2022-03-17 16:34:41.966  INFO 1392 --- [cluster-ClusterId{value='6233551140ede737bdcc78e7', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1850800}
+2022-03-17 16:34:41.974  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-17 16:34:42.094  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-17 16:34:42.143  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-17 16:34:42.145  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.494 seconds (JVM running for 553.167)
+2022-03-17 16:34:42.145  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:34:42.145624200
+2022-03-17 16:34:42.146  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:34:42.146625
+2022-03-17 16:34:42.147  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-17 16:35:38.255  INFO 1392 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-17 16:35:38.255  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-17 16:35:38.256  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-17 16:35:38.259  INFO 1392 --- [http-nio-9999-exec-1] c.a.pridesoft.localsrv.webservice.CneWS  : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
+2022-03-17 16:35:38.264  INFO 1392 --- [http-nio-9999-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:24, serverValue:63}] to localhost:27017
+2022-03-17 16:35:38.868  INFO 1392 --- [http-nio-9999-exec-1] c.a.pridesoft.localsrv.webservice.CneWS  : Nombre de CNE recuperees : 0
+2022-03-17 16:35:48.230  INFO 1392 --- [http-nio-9999-exec-2] c.a.pridesoft.localsrv.webservice.CneWS  : Recherche de la liste des projets de 01-01-2021  a 31-12-2022
+2022-03-17 16:36:17.615  INFO 1392 --- [http-nio-9999-exec-2] c.a.pridesoft.localsrv.webservice.CneWS  : Nombre de CNE recuperees : 15598
+2022-03-17 16:36:38.625  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-17 16:36:38.631  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-17 16:36:38.636  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-17 16:36:38.696  INFO 1392 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:36:38.855  INFO 1392 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:36:38.860  INFO 1392 --- [http-nio-9999-exec-7] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-17 16:36:38.869  INFO 1392 --- [http-nio-9999-exec-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:25, serverValue:64}] to localhost:27017
+2022-03-17 16:37:25.967  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
+2022-03-17 16:37:25.979  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Nombre de projets recuperees : 113
+2022-03-17 16:37:38.762  INFO 1392 --- [http-nio-9999-exec-9] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2020  a 31-12-2020
+2022-03-17 16:39:20.173  WARN 1392 --- [http-nio-9999-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:10000/ws/projet/periode/01-01-2020/31-12-2020": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect]
+2022-03-17 16:39:21.068  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2020  a 31-12-2020
+2022-03-17 16:39:23.103  WARN 1392 --- [http-nio-9999-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:10000/ws/projet/periode/01-01-2020/31-12-2020": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect]
+2022-03-17 16:39:30.815  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
+2022-03-17 16:39:32.871  WARN 1392 --- [http-nio-9999-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:10000/ws/projet/periode/01-01-2022/31-12-2022": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect]

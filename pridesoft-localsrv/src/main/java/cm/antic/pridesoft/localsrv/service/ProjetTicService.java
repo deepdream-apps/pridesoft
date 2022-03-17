@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cm.antic.pridesoft.datamodel.local.MaitreOuvrage;
 import cm.antic.pridesoft.datamodel.local.ProjetTic;
+import cm.antic.pridesoft.datatransfer.enums.TypeProjet;
 import cm.antic.pridesoft.datatransfer.local.NombreMontantDTO;
 import cm.antic.pridesoft.datatransfer.local.ProjetAnnuelDTO;
 import cm.antic.pridesoft.datatransfer.local.ProjetCategorieDTO;
@@ -208,7 +209,7 @@ public class ProjetTicService {
 		
 		
 		List<ProjetTic> listeMarches = listeProjetsTic.stream()
-				.filter(projetTic -> projetTic.getMontant().compareTo(BigDecimal.valueOf(5000000L)) > 0)
+				.filter(projetTic -> TypeProjet.MARCHE.getLibelle().equals(projetTic.getType()))
 				.collect(Collectors.toList());
 		
 		Long montantTotalMaches = listeMarches.stream()
@@ -217,7 +218,7 @@ public class ProjetTicService {
 					.sum() ;
 		
 		List<ProjetTic> listeCNEs = listeProjetsTic.stream()
-				.filter(projetTic -> projetTic.getMontant().compareTo(BigDecimal.valueOf(5000000L)) < 0)
+				.filter(projetTic -> TypeProjet.BONDECOMMANDE.getLibelle().equals(projetTic.getType()))
 				.collect(Collectors.toList()) ;
 		
 		Long montantTotalCNEs = listeCNEs.stream()
@@ -228,12 +229,12 @@ public class ProjetTicService {
 		Integer nombreTotal = listeProjetsTic.size() == 0 ? 1 : listeProjetsTic.size() ;
 		Long montantTotal = montantProjetsTic == 0L ? 1L : montantProjetsTic ;
 		
-		liste.add( new NombreMontantDTO("Nombre et Montant des projets TIC au niveau national", 
+		liste.add( new NombreMontantDTO("Nombre et Montant des tous les projets TIC au niveau national", 
 				listeProjetsTic.size(), montantProjetsTic, 
 				Double.valueOf(listeProjetsTic.size()*1.0/nombreTotal).floatValue(), 
 				Double.valueOf(montantProjetsTic*1.0/montantTotal).floatValue()))  ;
 		
-		liste.add( new NombreMontantDTO("Nombre et Montant des projets TIC au niveau central", 
+		liste.add( new NombreMontantDTO("Nombre et Montant des projets TIC au niveau de l'Administration centrale", 
 				listeProjetsTicSC.size(), montantProjetsTicSC, 
 				Double.valueOf(listeProjetsTicSC.size()*1.0/nombreTotal).floatValue(), 
 				Double.valueOf(montantProjetsTicSC*1.0/montantTotal).floatValue()))  ;
