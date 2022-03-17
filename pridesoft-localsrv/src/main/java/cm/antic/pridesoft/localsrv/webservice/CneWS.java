@@ -126,8 +126,7 @@ public class CneWS {
 			List<CneRemote> listeCNEsFiltres = listeCNEs.stream()
 					.filter(cneR -> {
 						return listeMotsCles.stream().anyMatch(motCle ->cneR.getObjetCommande().toLowerCase().contains(motCle)) 
-							   && cneR.getMontantTtcCommande() != null && cneR.getMontantTtcCommande().longValue() > 0L  
-							   && cneR.getMontantTtcCommande().longValue() < 5000000L;
+							   && cneR.getMontantTtcCommande() != null && cneR.getMontantTtcCommande().longValue() > 0L ;
 					}).collect(Collectors.toList()) ;
 			
 			return listeCNEsFiltres.stream()

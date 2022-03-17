@@ -1,5 +1,6 @@
 package cm.antic.pridesoft.localsrv.repository;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import java.util.List;
@@ -14,4 +15,10 @@ import cm.antic.pridesoft.datamodel.local.ProjetTic;
 public interface ProjetTicRepository extends MongoRepository<ProjetTic, String> {
 	public Optional<ProjetTic> findByCodeProjet (String codeProjet) ;
 	public List<ProjetTic> findByDateSignatureBetween (LocalDate dateDebut, LocalDate dateFin) ;
+	
+	public List<ProjetTic> findByMontantGreaterThanEqual(BigDecimal montant) ;
+	
+	public List<ProjetTic> findByMontantLessThan(BigDecimal montant) ;
+	
+	public List<ProjetTic> findByIdRegion(String idRegion) ;
 }

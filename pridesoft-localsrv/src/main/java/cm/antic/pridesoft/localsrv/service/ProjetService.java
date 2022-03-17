@@ -46,11 +46,11 @@ public class ProjetService {
 							    .montant(projet.getMontant())
 							    .idRegion(String.valueOf(projet.getIdRegion()))
 							    .libelleRegion(projet.getLibelleRegion())
-							    .idMaitreOuvrage(Long.toString(projet.getIdMaitreOuvrage()))
+							    .idMaitreOuvrage(String.valueOf(projet.getIdMaitreOuvrage()))
 							    .libelleMaitreOuvrage(projet.getLibelleMaitreOuvrage())
-							    //.idCategorie(Long.toString(projet.getIdCategorie()))
+							    //.idCategorie(String.valueOf(projet.getIdCategorie()))
 							    //.libelleCategorie(projet.getLibelleCategorie())
-							    //.idSecteurActivite(Long.toString(projet.getIdSecteurActivite()))
+							    //.idSecteurActivite(String.valueOf(projet.getIdSecteurActivite()))
 							    //.libelleSecteurActivite(projet.getLibelleSecteurActivite())
 							    .build() ;
 		projetTicRepository.save(projetTic) ;
