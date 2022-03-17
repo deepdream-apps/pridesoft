@@ -2,7 +2,6 @@ package cm.antic.pridesoft.datamodel.local;
 
 import java.io.Serializable;
 
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
