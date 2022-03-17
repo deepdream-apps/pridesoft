@@ -41,6 +41,10 @@ public class ProjetTic implements Serializable{
 	
 	private String libelleMaitreOuvrage ;
 	
+	private String idEntreprise ;
+	
+	private String libelleEntreprise ;
+	
 	private String idSecteurActivite ;
 	
 	private String libelleSecteurActivite ;

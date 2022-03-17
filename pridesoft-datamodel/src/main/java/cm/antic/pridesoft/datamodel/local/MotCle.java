@@ -1,7 +1,6 @@
 package cm.antic.pridesoft.datamodel.local;
 import java.io.Serializable;
 
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,30 +15,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @Document
-public class MaitreOuvrage implements Serializable{
+public class MotCle implements Serializable{
 	@Id
-	private String id ;
+	private String id;
 
-	private String sigle ;
-
-	private String libelle ;
+	private String libelle;
 	
-	private String idSecteurActivite ;
-	
-	private String libelleSecteurActivite ;
-	
-	private String idRegion ;
-	
-	private String libelleRegion ;
-
-	private String boitePostale ;
-
-	private String telephone ;
-
-	private String email ;
-
-	private String adresse ;
-	
-	private String siteWeb ;
+	private String description;
 
 }

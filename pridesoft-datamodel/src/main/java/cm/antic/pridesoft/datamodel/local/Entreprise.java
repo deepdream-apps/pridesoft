@@ -16,22 +16,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @Document
-public class MaitreOuvrage implements Serializable{
+public class Entreprise implements Serializable{
 	@Id
 	private String id ;
 
-	private String sigle ;
-
 	private String libelle ;
 	
-	private String idSecteurActivite ;
-	
-	private String libelleSecteurActivite ;
-	
-	private String idRegion ;
-	
-	private String libelleRegion ;
-
 	private String boitePostale ;
 
 	private String telephone ;
