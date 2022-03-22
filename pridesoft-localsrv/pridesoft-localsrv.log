@@ -1,325 +1,396 @@
-2022-03-17 09:21:43.361  INFO 5944 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Starting PridesoftLocalsrvApplicationTests on DESKTOP-GHFU2V5 with PID 5944 (started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 09:21:43.374  INFO 5944 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : No active profile set, falling back to default profiles: default
-2022-03-17 09:21:44.413  INFO 5944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 09:21:44.550  INFO 5944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 8 MongoDB repository interfaces.
-2022-03-17 09:21:45.543  INFO 5944 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 09:21:45.659  INFO 5944 --- [cluster-ClusterId{value='6232ef99cb41e857fbc917b2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:22}] to localhost:27017
-2022-03-17 09:21:45.669  INFO 5944 --- [cluster-ClusterId{value='6232ef99cb41e857fbc917b2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7073600}
-2022-03-17 09:21:47.557  INFO 5944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 09:21:48.217  INFO 5944 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Started PridesoftLocalsrvApplicationTests in 5.523 seconds (JVM running for 7.467)
-2022-03-17 09:21:48.229  INFO 5944 --- [main] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des CNE Pridesoft 2022-03-17T09:21:48.226165600
-2022-03-17 09:21:48.230  INFO 5944 --- [main] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la r�cup�ration des projets Pridesoft 2022-03-17T09:21:48.230161600
-2022-03-17 09:21:49.308  INFO 5944 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:25:30.657  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:25:30.665  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:25:30.794  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-03-17 16:25:30.794  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-03-17 16:25:31.708  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:25:31.845  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:25:33.202  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:25:33.223  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:25:33.224  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:25:33.442  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:25:33.443  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2649 ms
-2022-03-17 16:25:33.741  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:25:33.841  INFO 1392 --- [cluster-ClusterId{value='623352ed40ede737bdcc78db', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:26}] to localhost:27017
-2022-03-17 16:25:33.853  INFO 1392 --- [cluster-ClusterId{value='623352ed40ede737bdcc78db', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7802800}
-2022-03-17 16:25:34.059  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:25:35.066  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:25:35.534  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:25:35.553  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 5.56 seconds (JVM running for 6.575)
-2022-03-17 16:25:35.571  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:25:35.568271100
-2022-03-17 16:25:35.573  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:25:35.573270700
-2022-03-17 16:25:45.766  INFO 1392 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-17 16:25:45.766  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-17 16:25:45.779  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2022-03-17 16:25:45.830  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
-2022-03-17 16:25:45.919  INFO 1392 --- [http-nio-9999-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:27}] to localhost:27017
-2022-03-17 16:25:46.016  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
-2022-03-17 16:25:46.298  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
-2022-03-17 16:25:46.303  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
-2022-03-17 16:25:46.311  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
-2022-03-17 16:25:46.619  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:25:47.279  INFO 1392 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:25:47.287  INFO 1392 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:25:47.455  INFO 1392 --- [http-nio-9999-exec-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:28}] to localhost:27017
-2022-03-17 16:26:09.071  INFO 1392 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
-2022-03-17 16:26:09.106  INFO 1392 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.ProjetWS       : Nombre de projets recuperees : 113
-2022-03-17 16:26:28.710  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2021  a 31-12-2022
-2022-03-17 16:29:15.146  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Nombre de projets recuperees : 7713
-2022-03-17 16:29:15.627  INFO 1392 --- [ForkJoinPool.commonPool-worker-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:30}] to localhost:27017
-2022-03-17 16:29:15.627  INFO 1392 --- [ForkJoinPool.commonPool-worker-9] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:29}] to localhost:27017
-2022-03-17 16:29:15.627  INFO 1392 --- [ForkJoinPool.commonPool-worker-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:31}] to localhost:27017
-2022-03-17 16:29:15.635  INFO 1392 --- [ForkJoinPool.commonPool-worker-11] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:33}] to localhost:27017
-2022-03-17 16:29:15.636  INFO 1392 --- [ForkJoinPool.commonPool-worker-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:32}] to localhost:27017
-2022-03-17 16:29:15.635  INFO 1392 --- [ForkJoinPool.commonPool-worker-13] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:34}] to localhost:27017
-2022-03-17 16:29:22.855  INFO 1392 --- [http-nio-9999-exec-10] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
-2022-03-17 16:29:22.860  INFO 1392 --- [http-nio-9999-exec-10] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
-2022-03-17 16:29:22.864  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
-2022-03-17 16:29:22.926  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:29:23.290  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:29:23.310  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:30:22.770  INFO 1392 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:30:22.793  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:27}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:22.795  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:28}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:22.795  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:6, serverValue:33}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:22.796  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:7, serverValue:34}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:22.796  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:8, serverValue:31}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:22.798  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:29}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:22.798  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:5, serverValue:32}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:22.799  INFO 1392 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:9, serverValue:30}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:30:23.174  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:30:23.181  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:30:24.161  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:30:24.250  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:30:25.266  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:30:25.269  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:30:25.272  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:30:25.493  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:30:25.494  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2145 ms
-2022-03-17 16:30:25.614  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:30:25.677  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:30:26.212  INFO 1392 --- [cluster-ClusterId{value='6233541140ede737bdcc78dc', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:35}] to localhost:27017
-2022-03-17 16:30:26.312  INFO 1392 --- [cluster-ClusterId{value='6233541140ede737bdcc78dc', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=97808600}
-2022-03-17 16:30:26.674  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:30:26.893  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:30:26.913  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 3.902 seconds (JVM running for 297.935)
-2022-03-17 16:30:26.917  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:30:26.917575800
-2022-03-17 16:30:26.918  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:30:26.918575900
-2022-03-17 16:30:26.933  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:30:32.515  INFO 1392 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:30:32.627  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:30:32.627  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:30:33.089  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:30:33.350  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 260ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:30:34.220  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:30:34.222  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:30:34.223  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:30:34.583  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:30:34.584  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1952 ms
-2022-03-17 16:30:34.800  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:30:35.104  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:30:36.321  INFO 1392 --- [cluster-ClusterId{value='6233541a40ede737bdcc78dd', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:11, serverValue:37}] to localhost:27017
-2022-03-17 16:30:36.486  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:30:37.243  INFO 1392 --- [cluster-ClusterId{value='6233541a40ede737bdcc78dd', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=921857000}
-2022-03-17 16:30:37.450  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:30:37.455  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 4.886 seconds (JVM running for 308.478)
-2022-03-17 16:30:37.458  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:30:37.457795800
-2022-03-17 16:30:37.458  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:30:37.458793900
-2022-03-17 16:30:37.462  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:31:19.408  INFO 1392 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:31:19.582  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:31:19.583  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:31:20.067  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:31:20.123  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:31:20.371  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:31:20.372  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:31:20.373  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:31:20.527  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:31:20.528  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 939 ms
-2022-03-17 16:31:20.653  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:31:20.726  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:31:20.775  INFO 1392 --- [cluster-ClusterId{value='6233544840ede737bdcc78de', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:12, serverValue:41}] to localhost:27017
-2022-03-17 16:31:20.783  INFO 1392 --- [cluster-ClusterId{value='6233544840ede737bdcc78de', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7342200}
-2022-03-17 16:31:21.206  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:31:21.492  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:31:21.498  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 2.016 seconds (JVM running for 352.52)
-2022-03-17 16:31:21.501  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:31:21.500950
-2022-03-17 16:31:21.503  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:31:21.503949900
-2022-03-17 16:31:21.516  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:31:37.676  INFO 1392 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:31:37.741  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:31:37.742  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:31:37.864  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:31:37.896  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:31:38.065  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:31:38.067  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:31:38.067  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:31:38.121  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:31:38.121  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
-2022-03-17 16:31:38.148  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:31:38.169  INFO 1392 --- [cluster-ClusterId{value='6233545a40ede737bdcc78df', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:13, serverValue:44}] to localhost:27017
-2022-03-17 16:31:38.174  INFO 1392 --- [cluster-ClusterId{value='6233545a40ede737bdcc78df', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4142400}
-2022-03-17 16:31:38.178  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:31:38.423  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:31:38.580  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:31:38.586  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.868 seconds (JVM running for 369.607)
-2022-03-17 16:31:38.587  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:31:38.587385400
-2022-03-17 16:31:38.588  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:31:38.588387400
-2022-03-17 16:31:38.590  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:31:55.020  INFO 1392 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:31:55.118  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:31:55.119  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:31:55.336  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:31:55.367  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:31:55.537  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:31:55.538  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:31:55.538  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:31:55.630  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:31:55.631  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 507 ms
-2022-03-17 16:31:55.666  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:31:55.678  INFO 1392 --- [cluster-ClusterId{value='6233546b40ede737bdcc78e0', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:14, serverValue:47}] to localhost:27017
-2022-03-17 16:31:55.683  INFO 1392 --- [cluster-ClusterId{value='6233546b40ede737bdcc78e0', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4437500}
-2022-03-17 16:31:55.728  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:31:56.176  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:31:56.489  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:31:56.497  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.412 seconds (JVM running for 387.519)
-2022-03-17 16:31:56.500  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:31:56.500804700
-2022-03-17 16:31:56.500  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:31:56.500804700
-2022-03-17 16:31:56.507  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:32:05.472  INFO 1392 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:32:05.719  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:32:05.719  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:32:06.081  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:32:06.127  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:32:06.484  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:32:06.488  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:32:06.488  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:32:06.726  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:32:06.726  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
-2022-03-17 16:32:06.816  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:32:06.844  INFO 1392 --- [cluster-ClusterId{value='6233547640ede737bdcc78e1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:15, serverValue:50}] to localhost:27017
-2022-03-17 16:32:06.854  INFO 1392 --- [cluster-ClusterId{value='6233547640ede737bdcc78e1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9326000}
-2022-03-17 16:32:06.854  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:32:08.990  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:32:09.360  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:32:09.365  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 3.771 seconds (JVM running for 400.387)
-2022-03-17 16:32:09.367  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:32:09.367234900
-2022-03-17 16:32:09.368  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:32:09.368233900
-2022-03-17 16:32:09.372  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:32:15.862  INFO 1392 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:32:16.112  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:32:16.113  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:32:16.592  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:32:16.649  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:32:16.911  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:32:16.917  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:32:16.920  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:32:17.058  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:32:17.059  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 940 ms
-2022-03-17 16:32:17.092  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:32:17.101  INFO 1392 --- [cluster-ClusterId{value='6233548140ede737bdcc78e2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:16, serverValue:53}] to localhost:27017
-2022-03-17 16:32:17.104  INFO 1392 --- [cluster-ClusterId{value='6233548140ede737bdcc78e2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2689500}
-2022-03-17 16:32:17.126  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:32:17.436  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:32:17.602  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:32:17.605  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.616 seconds (JVM running for 408.627)
-2022-03-17 16:32:17.606  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:32:17.606389400
-2022-03-17 16:32:17.607  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:32:17.606389400
-2022-03-17 16:32:17.609  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:33:06.366  INFO 1392 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:33:16.159  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:33:16.159  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:33:16.284  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:33:16.305  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:33:16.395  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:33:16.396  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:33:16.396  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:33:16.441  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:33:16.441  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 280 ms
-2022-03-17 16:33:16.459  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:33:16.464  INFO 1392 --- [cluster-ClusterId{value='623354bc40ede737bdcc78e4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:18, serverValue:57}] to localhost:27017
-2022-03-17 16:33:16.466  INFO 1392 --- [cluster-ClusterId{value='623354bc40ede737bdcc78e4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1789400}
-2022-03-17 16:33:16.478  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:33:16.641  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:33:16.697  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:33:16.699  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.572 seconds (JVM running for 467.721)
-2022-03-17 16:33:16.700  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:33:16.700299300
-2022-03-17 16:33:16.700  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:33:16.700299300
-2022-03-17 16:33:16.702  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:33:28.532  INFO 1392 --- [Thread-41] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:33:28.628  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:33:28.628  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:33:28.825  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:33:28.871  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:33:29.130  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:33:29.132  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:33:29.133  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:33:29.268  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:33:29.268  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 637 ms
-2022-03-17 16:33:29.305  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:33:29.313  INFO 1392 --- [cluster-ClusterId{value='623354c940ede737bdcc78e5', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:19, serverValue:58}] to localhost:27017
-2022-03-17 16:33:29.317  INFO 1392 --- [cluster-ClusterId{value='623354c940ede737bdcc78e5', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3280200}
-2022-03-17 16:33:29.339  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:33:29.591  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:33:29.694  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:33:29.696  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.101 seconds (JVM running for 480.718)
-2022-03-17 16:33:29.697  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:33:29.697477800
-2022-03-17 16:33:29.698  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:33:29.698476200
-2022-03-17 16:33:29.701  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:33:54.267  INFO 1392 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-17 16:33:54.267  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-17 16:33:54.268  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-03-17 16:33:54.270  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
-2022-03-17 16:33:54.275  INFO 1392 --- [http-nio-9999-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:20, serverValue:59}] to localhost:27017
-2022-03-17 16:33:54.286  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
-2022-03-17 16:33:54.292  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
-2022-03-17 16:33:54.366  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:33:54.678  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:33:54.685  INFO 1392 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:33:54.696  INFO 1392 --- [http-nio-9999-exec-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:21, serverValue:60}] to localhost:27017
-2022-03-17 16:34:22.928  INFO 1392 --- [Thread-49] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:34:22.929  INFO 1392 --- [Thread-49] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:21, serverValue:60}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:34:22.931  INFO 1392 --- [Thread-49] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:20, serverValue:59}] to localhost:27017 because the pool has been closed.
-2022-03-17 16:34:23.022  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:34:23.022  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:34:23.155  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:34:23.176  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:34:23.261  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:34:23.262  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:34:23.262  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:34:23.303  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:34:23.303  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 279 ms
-2022-03-17 16:34:23.320  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:34:23.324  INFO 1392 --- [cluster-ClusterId{value='623354ff40ede737bdcc78e6', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:22, serverValue:61}] to localhost:27017
-2022-03-17 16:34:23.326  INFO 1392 --- [cluster-ClusterId{value='623354ff40ede737bdcc78e6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1452000}
-2022-03-17 16:34:23.335  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:34:23.453  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:34:23.495  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:34:23.497  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.509 seconds (JVM running for 534.518)
-2022-03-17 16:34:23.498  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:34:23.497179500
-2022-03-17 16:34:23.498  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:34:23.498179600
-2022-03-17 16:34:23.499  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:34:41.586  INFO 1392 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:34:41.681  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 1392 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
-2022-03-17 16:34:41.681  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
-2022-03-17 16:34:41.803  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-03-17 16:34:41.818  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 11 MongoDB repository interfaces.
-2022-03-17 16:34:41.895  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
-2022-03-17 16:34:41.896  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-17 16:34:41.896  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2022-03-17 16:34:41.940  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-03-17 16:34:41.940  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 257 ms
-2022-03-17 16:34:41.960  INFO 1392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-03-17 16:34:41.964  INFO 1392 --- [cluster-ClusterId{value='6233551140ede737bdcc78e7', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:23, serverValue:62}] to localhost:27017
-2022-03-17 16:34:41.966  INFO 1392 --- [cluster-ClusterId{value='6233551140ede737bdcc78e7', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1850800}
-2022-03-17 16:34:41.974  WARN 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-03-17 16:34:42.094  INFO 1392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-17 16:34:42.143  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
-2022-03-17 16:34:42.145  INFO 1392 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.494 seconds (JVM running for 553.167)
-2022-03-17 16:34:42.145  INFO 1392 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des CNE Pridesoft 2022-03-17T16:34:42.145624200
-2022-03-17 16:34:42.146  INFO 1392 --- [restartedMain] c.a.p.l.startup.ProjetCommandLineRunner  : Lancement de la récupération des projets Pridesoft 2022-03-17T16:34:42.146625
-2022-03-17 16:34:42.147  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-03-17 16:35:38.255  INFO 1392 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-17 16:35:38.255  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-17 16:35:38.256  INFO 1392 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-03-17 16:35:38.259  INFO 1392 --- [http-nio-9999-exec-1] c.a.pridesoft.localsrv.webservice.CneWS  : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
-2022-03-17 16:35:38.264  INFO 1392 --- [http-nio-9999-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:24, serverValue:63}] to localhost:27017
-2022-03-17 16:35:38.868  INFO 1392 --- [http-nio-9999-exec-1] c.a.pridesoft.localsrv.webservice.CneWS  : Nombre de CNE recuperees : 0
-2022-03-17 16:35:48.230  INFO 1392 --- [http-nio-9999-exec-2] c.a.pridesoft.localsrv.webservice.CneWS  : Recherche de la liste des projets de 01-01-2021  a 31-12-2022
-2022-03-17 16:36:17.615  INFO 1392 --- [http-nio-9999-exec-2] c.a.pridesoft.localsrv.webservice.CneWS  : Nombre de CNE recuperees : 15598
-2022-03-17 16:36:38.625  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
-2022-03-17 16:36:38.631  INFO 1392 --- [http-nio-9999-exec-3] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
-2022-03-17 16:36:38.636  INFO 1392 --- [http-nio-9999-exec-4] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
-2022-03-17 16:36:38.696  INFO 1392 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:36:38.855  INFO 1392 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:36:38.860  INFO 1392 --- [http-nio-9999-exec-7] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
-2022-03-17 16:36:38.869  INFO 1392 --- [http-nio-9999-exec-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:25, serverValue:64}] to localhost:27017
-2022-03-17 16:37:25.967  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
-2022-03-17 16:37:25.979  INFO 1392 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.ProjetWS       : Nombre de projets recuperees : 113
-2022-03-17 16:37:38.762  INFO 1392 --- [http-nio-9999-exec-9] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2020  a 31-12-2020
-2022-03-17 16:39:20.173  WARN 1392 --- [http-nio-9999-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:10000/ws/projet/periode/01-01-2020/31-12-2020": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect]
-2022-03-17 16:39:21.068  INFO 1392 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2020  a 31-12-2020
-2022-03-17 16:39:23.103  WARN 1392 --- [http-nio-9999-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:10000/ws/projet/periode/01-01-2020/31-12-2020": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect]
-2022-03-17 16:39:30.815  INFO 1392 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.ProjetWS       : Recherche de la liste des projets de 01-01-2022  a 31-12-2022
-2022-03-17 16:39:32.871  WARN 1392 --- [http-nio-9999-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:10000/ws/projet/periode/01-01-2022/31-12-2022": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect]
+2022-03-18 11:37:45.069  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 7520 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 11:37:45.085  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-18 11:37:45.242  INFO 7520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 11:37:45.243  INFO 7520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 11:37:46.208  INFO 7520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 11:37:46.390  INFO 7520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172ms. Found 11 MongoDB repository interfaces.
+2022-03-18 11:37:48.260  INFO 7520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-18 11:37:48.288  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-18 11:37:48.289  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-18 11:37:48.682  INFO 7520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-18 11:37:48.682  INFO 7520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3438 ms
+2022-03-18 11:37:49.236  INFO 7520 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 11:37:49.441  INFO 7520 --- [cluster-ClusterId{value='623460fda104614555dcb62e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2022-03-18 11:37:49.458  INFO 7520 --- [cluster-ClusterId{value='623460fda104614555dcb62e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12253900}
+2022-03-18 11:37:49.984  INFO 7520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-18 11:37:51.569  INFO 7520 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 11:37:52.227  INFO 7520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-18 11:37:52.258  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 7.932 seconds (JVM running for 9.147)
+2022-03-18 11:37:52.274  INFO 7520 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft 2022-03-18T11:37:52.269071900
+2022-03-18 11:37:52.278  INFO 7520 --- [restartedMain] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft 2022-03-18T11:37:52.278068200
+2022-03-18 11:37:52.288  INFO 7520 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2014
+2022-03-18 11:37:52.288  INFO 7520 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2014
+2022-03-18 11:37:52.288  INFO 7520 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2016
+2022-03-18 11:37:52.289  INFO 7520 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2015
+2022-03-18 11:37:52.288  INFO 7520 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2015
+2022-03-18 11:37:52.292  INFO 7520 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2017
+2022-03-18 11:37:52.295  INFO 7520 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2016
+2022-03-18 11:37:54.465  INFO 7520 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2020
+2022-03-18 11:37:54.465  INFO 7520 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2017
+2022-03-18 11:37:54.465  INFO 7520 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2019
+2022-03-18 11:37:54.465  INFO 7520 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2021
+2022-03-18 11:37:54.465  INFO 7520 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2018
+2022-03-18 11:37:54.465  INFO 7520 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2018
+2022-03-18 11:37:54.479  INFO 7520 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2019
+2022-03-18 11:37:56.500  INFO 7520 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2022
+2022-03-18 11:37:56.500  INFO 7520 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2020
+2022-03-18 11:37:56.500  INFO 7520 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2021
+2022-03-18 11:37:56.500  INFO 7520 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2022
+2022-03-18 11:39:31.389  INFO 7520 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-18 11:39:31.504  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 7520 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 11:39:31.505  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-18 11:39:31.759  INFO 7520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 11:39:31.793  INFO 7520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 11 MongoDB repository interfaces.
+2022-03-18 11:39:31.949  INFO 7520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-18 11:39:31.950  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-18 11:39:31.951  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-18 11:39:32.007  INFO 7520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-18 11:39:32.008  INFO 7520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2022-03-18 11:39:32.045  INFO 7520 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 11:39:32.080  INFO 7520 --- [cluster-ClusterId{value='62346164a104614555dcb62f', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:27017
+2022-03-18 11:39:32.084  INFO 7520 --- [cluster-ClusterId{value='62346164a104614555dcb62f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3366200}
+2022-03-18 11:39:32.093  INFO 7520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-18 11:39:32.522  INFO 7520 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 11:39:32.725  INFO 7520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-18 11:39:32.730  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.281 seconds (JVM running for 109.62)
+2022-03-18 11:39:32.733  INFO 7520 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft 2022-03-18T11:39:32.732981
+2022-03-18 11:39:32.736  INFO 7520 --- [restartedMain] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft 2022-03-18T11:39:32.736979300
+2022-03-18 11:39:32.738  INFO 7520 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2014
+2022-03-18 11:39:32.740  INFO 7520 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2018
+2022-03-18 11:39:32.739  INFO 7520 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2015
+2022-03-18 11:39:32.739  INFO 7520 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2017
+2022-03-18 11:39:32.739  INFO 7520 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2016
+2022-03-18 11:39:32.742  INFO 7520 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2014
+2022-03-18 11:39:32.739  INFO 7520 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-18 11:39:32.748  INFO 7520 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2015
+2022-03-18 11:39:35.789  INFO 7520 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2020
+2022-03-18 11:39:35.789  INFO 7520 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2019
+2022-03-18 11:39:35.810  INFO 7520 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 11:39:35.810  INFO 7520 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 11:39:35.812  INFO 7520 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2017
+2022-03-18 11:39:35.812  INFO 7520 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2016
+2022-03-18 11:39:42.742  INFO 7520 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2021
+2022-03-18 11:39:47.259  INFO 7520 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 11:39:47.260  INFO 7520 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2018
+2022-03-18 11:40:57.101  INFO 7520 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-18 11:40:57.191  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 7520 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 11:40:57.191  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-18 11:40:57.403  INFO 7520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 11:40:57.430  INFO 7520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 11 MongoDB repository interfaces.
+2022-03-18 11:40:57.566  INFO 7520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-18 11:40:57.567  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-18 11:40:57.567  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-18 11:40:57.602  INFO 7520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-18 11:40:57.602  INFO 7520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2022-03-18 11:40:57.625  INFO 7520 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 11:40:57.631  INFO 7520 --- [cluster-ClusterId{value='623461b9a104614555dcb630', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:6}] to localhost:27017
+2022-03-18 11:40:57.634  INFO 7520 --- [cluster-ClusterId{value='623461b9a104614555dcb630', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2554000}
+2022-03-18 11:40:57.650  INFO 7520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-18 11:40:57.833  INFO 7520 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 11:40:57.910  INFO 7520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-18 11:40:57.912  INFO 7520 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 0.76 seconds (JVM running for 194.801)
+2022-03-18 11:40:57.915  INFO 7520 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft 2022-03-18T11:40:57.915450700
+2022-03-18 11:40:57.917  INFO 7520 --- [restartedMain] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft 2022-03-18T11:40:57.917455300
+2022-03-18 11:40:57.918  INFO 7520 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-18 11:44:26.650  INFO 16256 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 16256 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 11:44:26.660  INFO 16256 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-18 11:44:26.798  INFO 16256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 11:44:26.799  INFO 16256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 11:44:27.610  INFO 16256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 11:44:27.736  INFO 16256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 11 MongoDB repository interfaces.
+2022-03-18 11:44:29.052  INFO 16256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-18 11:44:29.075  INFO 16256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-18 11:44:29.076  INFO 16256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-18 11:44:29.316  INFO 16256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-18 11:44:29.316  INFO 16256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2517 ms
+2022-03-18 11:44:29.587  INFO 16256 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 11:44:29.737  INFO 16256 --- [cluster-ClusterId{value='6234628d4941494db0679f1d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:8}] to localhost:27017
+2022-03-18 11:44:29.752  INFO 16256 --- [cluster-ClusterId{value='6234628d4941494db0679f1d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11214500}
+2022-03-18 11:44:29.970  INFO 16256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-18 11:44:30.972  INFO 16256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 11:44:31.439  INFO 16256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-18 11:44:31.457  INFO 16256 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 5.544 seconds (JVM running for 6.488)
+2022-03-18 11:44:31.474  INFO 16256 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft 2022-03-18T11:44:31.470419200
+2022-03-18 11:44:31.477  INFO 16256 --- [restartedMain] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft 2022-03-18T11:44:31.477422200
+2022-03-18 11:44:31.482  INFO 16256 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2014
+2022-03-18 11:44:31.483  INFO 16256 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2014
+2022-03-18 11:44:31.484  INFO 16256 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2015
+2022-03-18 11:44:31.485  INFO 16256 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2016
+2022-03-18 11:44:31.485  INFO 16256 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2017
+2022-03-18 11:44:31.486  INFO 16256 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2018
+2022-03-18 11:44:31.486  INFO 16256 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2015
+2022-03-18 11:44:33.591  INFO 16256 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2020
+2022-03-18 11:44:33.591  INFO 16256 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2019
+2022-03-18 11:44:33.605  INFO 16256 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2018
+2022-03-18 11:44:33.605  INFO 16256 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2022
+2022-03-18 11:44:33.605  INFO 16256 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2021
+2022-03-18 11:44:33.605  INFO 16256 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2017
+2022-03-18 11:44:33.605  INFO 16256 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2016
+2022-03-18 11:44:35.646  INFO 16256 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2019
+2022-03-18 11:44:35.646  INFO 16256 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2020
+2022-03-18 11:44:35.662  INFO 16256 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2022
+2022-03-18 11:44:35.663  INFO 16256 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2021
+2022-03-18 11:45:48.558  INFO 11016 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 11016 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 11:45:48.564  INFO 11016 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-18 11:45:48.708  INFO 11016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 11:45:48.709  INFO 11016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 11:45:49.848  INFO 11016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 11:45:49.989  INFO 11016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 11 MongoDB repository interfaces.
+2022-03-18 11:45:51.221  INFO 11016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-18 11:45:51.243  INFO 11016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-18 11:45:51.244  INFO 11016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-18 11:45:51.467  INFO 11016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-18 11:45:51.467  INFO 11016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2757 ms
+2022-03-18 11:45:51.727  INFO 11016 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 11:45:51.836  INFO 11016 --- [cluster-ClusterId{value='623462df54b2a26855937f1b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:10}] to localhost:27017
+2022-03-18 11:45:51.848  INFO 11016 --- [cluster-ClusterId{value='623462df54b2a26855937f1b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8371700}
+2022-03-18 11:45:52.092  WARN 11016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-18 11:45:53.112  INFO 11016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 11:45:53.609  INFO 11016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-18 11:45:53.624  INFO 11016 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 5.719 seconds (JVM running for 6.648)
+2022-03-18 11:45:53.638  INFO 11016 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft 2022-03-18T11:45:53.634673
+2022-03-18 11:45:53.646  INFO 11016 --- [restartedMain] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft 2022-03-18T11:45:53.645666500
+2022-03-18 11:45:53.655  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2014
+2022-03-18 11:45:53.655  INFO 11016 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2014
+2022-03-18 11:45:53.658  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2015
+2022-03-18 11:45:53.658  INFO 11016 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2015
+2022-03-18 11:45:53.659  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2016
+2022-03-18 11:45:53.660  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2017
+2022-03-18 11:45:53.660  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2018
+2022-03-18 11:45:55.884  INFO 11016 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 0
+2022-03-18 11:45:55.884  INFO 11016 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 0
+2022-03-18 11:45:55.943  INFO 11016 --- [ForkJoinPool.commonPool-worker-7] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:11}] to localhost:27017
+2022-03-18 11:45:55.943  INFO 11016 --- [ForkJoinPool.commonPool-worker-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:12}] to localhost:27017
+2022-03-18 11:45:56.422  INFO 11016 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2019
+2022-03-18 11:45:56.422  INFO 11016 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2020
+2022-03-18 11:45:56.664  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 11:45:56.665  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2016
+2022-03-18 11:45:58.479  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 11:45:58.479  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2017
+2022-03-18 11:46:16.063  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 11:46:16.063  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2018
+2022-03-18 11:53:41.850  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 227
+2022-03-18 11:53:41.851  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2019
+2022-03-18 11:53:46.223  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 167
+2022-03-18 11:53:46.224  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2020
+2022-03-18 12:00:52.467  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 139
+2022-03-18 12:00:52.467  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2021
+2022-03-18 12:01:46.702  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 2567
+2022-03-18 12:01:46.785  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2021
+2022-03-18 12:02:55.362  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 188
+2022-03-18 12:02:55.362  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2022
+2022-03-18 12:03:30.600  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 2
+2022-03-18 12:03:30.601  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2022
+2022-03-18 12:03:31.418  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 0
+2022-03-18 12:07:58.033  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 202
+2022-03-18 12:10:53.745  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 635
+2022-03-18 12:14:01.441  INFO 11016 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 12:14:01.442  INFO 11016 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-18 12:14:01.451  INFO 11016 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-03-18 12:14:01.504  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:14:01.634  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:14:01.932  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:14:01.936  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:14:01.952  INFO 11016 --- [http-nio-9999-exec-3] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:14:02.469  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:03.384  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:03.623  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:40.397  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:14:40.401  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:14:40.406  INFO 11016 --- [http-nio-9999-exec-8] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:14:40.522  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:40.734  INFO 11016 --- [http-nio-9999-exec-10] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:40.796  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:52.037  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:14:52.043  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:14:52.047  INFO 11016 --- [http-nio-9999-exec-3] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:14:52.162  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:52.411  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:14:52.414  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:15:12.343  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:15:12.347  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:15:12.350  INFO 11016 --- [http-nio-9999-exec-8] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:15:12.467  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:15:12.678  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:15:12.678  INFO 11016 --- [http-nio-9999-exec-10] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:15:13.886  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:15:13.889  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:15:13.894  INFO 11016 --- [http-nio-9999-exec-3] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:15:14.009  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:15:14.243  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:15:14.244  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:15:27.465  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 3491
+2022-03-18 12:15:44.236  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 3225
+2022-03-18 12:17:49.259  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:17:49.266  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:17:49.346  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:17:49.349  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:17:49.352  INFO 11016 --- [http-nio-9999-exec-10] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:17:49.461  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:17:49.685  INFO 11016 --- [http-nio-9999-exec-3] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:17:49.687  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:17:58.479  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:17:58.483  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:17:58.485  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:17:58.591  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:17:58.799  INFO 11016 --- [http-nio-9999-exec-8] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:17:58.801  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:18.327  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:19:18.332  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:19:18.335  INFO 11016 --- [http-nio-9999-exec-3] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:19:18.443  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:18.672  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:18.677  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:21.893  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:19:21.898  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:19:21.901  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:19:22.007  INFO 11016 --- [http-nio-9999-exec-8] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:22.184  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:22.184  INFO 11016 --- [http-nio-9999-exec-10] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:48.800  INFO 11016 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 3956
+2022-03-18 12:19:52.358  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:19:52.365  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:19:52.367  INFO 11016 --- [http-nio-9999-exec-3] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:19:52.473  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:52.659  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:19:52.661  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:20:44.709  INFO 11016 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 4258
+2022-03-18 12:21:44.476  INFO 11016 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:21:44.478  INFO 11016 --- [http-nio-9999-exec-8] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:21:44.483  INFO 11016 --- [http-nio-9999-exec-10] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:21:44.583  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:21:44.780  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:21:44.780  INFO 11016 --- [http-nio-9999-exec-3] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:21:46.026  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:21:46.030  INFO 11016 --- [http-nio-9999-exec-4] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:21:46.036  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:21:46.137  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:21:46.349  INFO 11016 --- [http-nio-9999-exec-7] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:21:46.354  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:23:20.955  INFO 11016 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-18 12:23:20.959  INFO 11016 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:12}] to localhost:27017 because the pool has been closed.
+2022-03-18 12:23:20.961  INFO 11016 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:11}] to localhost:27017 because the pool has been closed.
+2022-03-18 12:23:21.096  INFO 11016 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Starting PridesoftLocalsrvApplication on DESKTOP-GHFU2V5 with PID 11016 (C:\Users\Gatien\git\pridesoft\pridesoft-localsrv\target\classes started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 12:23:21.096  INFO 11016 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : No active profile set, falling back to default profiles: default
+2022-03-18 12:23:21.354  INFO 11016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 12:23:21.382  INFO 11016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 11 MongoDB repository interfaces.
+2022-03-18 12:23:21.495  INFO 11016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-03-18 12:23:21.496  INFO 11016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-18 12:23:21.496  INFO 11016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-03-18 12:23:21.601  INFO 11016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-18 12:23:21.601  INFO 11016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 499 ms
+2022-03-18 12:23:21.628  INFO 11016 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 12:23:21.636  INFO 11016 --- [cluster-ClusterId{value='62346ba954b2a26855937f1c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:14}] to localhost:27017
+2022-03-18 12:23:21.638  INFO 11016 --- [cluster-ClusterId{value='62346ba954b2a26855937f1c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2053500}
+2022-03-18 12:23:21.655  WARN 11016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-03-18 12:23:21.925  INFO 11016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 12:23:22.026  INFO 11016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-03-18 12:23:22.032  INFO 11016 --- [restartedMain] c.a.p.l.PridesoftLocalsrvApplication     : Started PridesoftLocalsrvApplication in 1.014 seconds (JVM running for 2255.057)
+2022-03-18 12:23:22.034  INFO 11016 --- [restartedMain] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft 2022-03-18T12:23:22.034852900
+2022-03-18 12:23:22.036  INFO 11016 --- [restartedMain] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft 2022-03-18T12:23:22.036838800
+2022-03-18 12:23:22.039  INFO 11016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-18 12:23:22.040  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2014
+2022-03-18 12:23:22.041  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2015
+2022-03-18 12:23:22.045  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2014
+2022-03-18 12:23:22.045  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2015
+2022-03-18 12:23:22.045  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2016
+2022-03-18 12:23:22.055  INFO 11016 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2017
+2022-03-18 12:23:22.057  INFO 11016 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2016
+2022-03-18 12:23:22.072  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 0
+2022-03-18 12:23:22.076  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 0
+2022-03-18 12:23:22.092  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 12:23:22.093  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2018
+2022-03-18 12:23:22.094  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 12:23:22.096  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2019
+2022-03-18 12:23:22.145  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 0
+2022-03-18 12:23:22.145  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2020
+2022-03-18 12:23:22.964  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:16}] to localhost:27017
+2022-03-18 12:23:22.965  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:15}] to localhost:27017
+2022-03-18 12:23:23.477  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 167
+2022-03-18 12:23:23.478  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2021
+2022-03-18 12:23:24.055  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 139
+2022-03-18 12:23:24.056  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la récupération des marchés Pridesoft pour l'année 2022
+2022-03-18 12:23:24.129  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 202
+2022-03-18 12:23:24.129  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2017
+2022-03-18 12:23:24.138  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 188
+2022-03-18 12:23:24.138  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2018
+2022-03-18 12:23:24.181  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 2
+2022-03-18 12:23:24.183  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2019
+2022-03-18 12:23:24.627  INFO 11016 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de l'enregistrement des marchés récupérés 227
+2022-03-18 12:23:24.627  INFO 11016 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2020
+2022-03-18 12:23:27.202  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2021
+2022-03-18 12:23:27.231  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la récupération des bons de commande Pridesoft pour l'année 2022
+2022-03-18 12:23:27.351  INFO 11016 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 0
+2022-03-18 12:23:29.351  INFO 11016 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 2567
+2022-03-18 12:23:30.520  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 635
+2022-03-18 12:23:30.778  INFO 11016 --- [ForkJoinPool.commonPool-worker-9] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:17}] to localhost:27017
+2022-03-18 12:23:33.047  INFO 11016 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 3491
+2022-03-18 12:23:33.205  INFO 11016 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 3225
+2022-03-18 12:23:35.365  INFO 11016 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 3956
+2022-03-18 12:23:35.373  INFO 11016 --- [ForkJoinPool.commonPool-worker-1] c.a.p.l.startup.CNECommandLineRunner     : Lancement de l'enregistrement des bons de commande récupérés 4258
+2022-03-18 12:24:47.686  INFO 11016 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 12:24:47.686  INFO 11016 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-18 12:24:47.687  INFO 11016 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-18 12:24:47.691  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : Recerche de l'utilisateur login admin
+2022-03-18 12:24:47.699  INFO 11016 --- [http-nio-9999-exec-1] c.a.p.localsrv.webservice.UtilisateurWS  : utilisateur=Utilisateur(id=622f1fb030ccc119639fd2aa, login=admin, motDePasse=$2a$10$PvUtCKU0iFFQGhSssVMiT.zPeRnzxjG1O3677bPz/kqQUQ63puxma, profil=Administrateur, dateCreation=null, dateExpiration=null, dateExpirationMdp=null)
+2022-03-18 12:24:47.705  INFO 11016 --- [http-nio-9999-exec-2] c.a.p.l.w.ProjetTicGlobalDataWS          : Recerche des donnees globales...
+2022-03-18 12:24:47.846  INFO 11016 --- [http-nio-9999-exec-5] c.a.p.l.webservice.ProjetTicDataWS       : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:24:48.016  INFO 11016 --- [http-nio-9999-exec-6] c.a.p.l.webservice.ProjetTicBarChartWS   : Recerche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:24:48.020  INFO 11016 --- [http-nio-9999-exec-9] c.a.p.l.webservice.ProjetTicPieChartWS   : Recherche des projets de 01-01-2017 à 31-12-2022
+2022-03-18 12:34:00.249  INFO 11476 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Starting PridesoftLocalsrvApplicationTests on DESKTOP-GHFU2V5 with PID 11476 (started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 12:34:00.252  INFO 11476 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : No active profile set, falling back to default profiles: default
+2022-03-18 12:34:01.326  INFO 11476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 12:34:01.453  INFO 11476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120ms. Found 11 MongoDB repository interfaces.
+2022-03-18 12:34:02.370  INFO 11476 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 12:34:02.471  INFO 11476 --- [cluster-ClusterId{value='62346e2a9637b7608e300f1c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:18}] to localhost:27017
+2022-03-18 12:34:02.482  INFO 11476 --- [cluster-ClusterId{value='62346e2a9637b7608e300f1c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7329800}
+2022-03-18 12:34:04.476  INFO 11476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 12:34:05.267  INFO 11476 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Started PridesoftLocalsrvApplicationTests in 5.525 seconds (JVM running for 7.228)
+2022-03-18 12:34:05.283  INFO 11476 --- [main] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft 2022-03-18T12:34:05.279163600
+2022-03-18 12:34:05.287  INFO 11476 --- [main] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft 2022-03-18T12:34:05.286163600
+2022-03-18 12:34:05.299  INFO 11476 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft pour l'ann�e 2014
+2022-03-18 12:34:05.300  INFO 11476 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2015
+2022-03-18 12:34:05.303  INFO 11476 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft pour l'ann�e 2016
+2022-03-18 12:34:05.301  INFO 11476 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2016
+2022-03-18 12:34:05.300  INFO 11476 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2014
+2022-03-18 12:34:05.302  INFO 11476 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft pour l'ann�e 2015
+2022-03-18 12:34:05.302  INFO 11476 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2017
+2022-03-18 12:34:06.854  INFO 11476 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-18 12:42:17.938  INFO 10620 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Starting PridesoftLocalsrvApplicationTests on DESKTOP-GHFU2V5 with PID 10620 (started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 12:42:17.941  INFO 10620 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : No active profile set, falling back to default profiles: default
+2022-03-18 12:42:18.880  INFO 10620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 12:42:19.014  INFO 10620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126ms. Found 11 MongoDB repository interfaces.
+2022-03-18 12:42:20.065  INFO 10620 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 12:42:20.190  INFO 10620 --- [cluster-ClusterId{value='6234701c1596996ab1c5fb5e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:19}] to localhost:27017
+2022-03-18 12:42:20.201  INFO 10620 --- [cluster-ClusterId{value='6234701c1596996ab1c5fb5e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8012800}
+2022-03-18 12:42:22.297  INFO 10620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 12:42:23.027  INFO 10620 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Started PridesoftLocalsrvApplicationTests in 5.585 seconds (JVM running for 7.458)
+2022-03-18 12:42:23.052  INFO 10620 --- [main] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft 2022-03-18T12:42:23.047762
+2022-03-18 12:42:23.056  INFO 10620 --- [main] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft 2022-03-18T12:42:23.056761900
+2022-03-18 12:42:23.064  INFO 10620 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2014
+2022-03-18 12:42:23.071  INFO 10620 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft pour l'ann�e 2014
+2022-03-18 12:42:23.074  INFO 10620 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2015
+2022-03-18 12:42:23.084  INFO 10620 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2016
+2022-03-18 12:42:23.091  INFO 10620 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2017
+2022-03-18 12:42:23.094  INFO 10620 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2018
+2022-03-18 12:42:23.105  INFO 10620 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2019
+2022-03-18 12:42:24.051  INFO 10620 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-18 12:49:38.014  INFO 10476 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Starting PridesoftLocalsrvApplicationTests on DESKTOP-GHFU2V5 with PID 10476 (started by Gatien in C:\Users\Gatien\git\pridesoft\pridesoft-localsrv)
+2022-03-18 12:49:38.016  INFO 10476 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : No active profile set, falling back to default profiles: default
+2022-03-18 12:49:38.797  INFO 10476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-18 12:49:38.928  INFO 10476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 11 MongoDB repository interfaces.
+2022-03-18 12:49:39.994  INFO 10476 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-03-18 12:49:40.119  INFO 10476 --- [cluster-ClusterId{value='623471d3b1b9fb0b02ffd19c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+2022-03-18 12:49:40.128  INFO 10476 --- [cluster-ClusterId{value='623471d3b1b9fb0b02ffd19c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6551500}
+2022-03-18 12:49:41.992  INFO 10476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-18 12:49:42.615  INFO 10476 --- [main] .a.p.l.PridesoftLocalsrvApplicationTests : Started PridesoftLocalsrvApplicationTests in 4.979 seconds (JVM running for 6.015)
+2022-03-18 12:49:42.628  INFO 10476 --- [main] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft 2022-03-18T12:49:42.625256800
+2022-03-18 12:49:42.632  INFO 10476 --- [main] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft 2022-03-18T12:49:42.632255900
+2022-03-18 12:49:42.637  INFO 10476 --- [ForkJoinPool.commonPool-worker-5] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2014
+2022-03-18 12:49:42.639  INFO 10476 --- [ForkJoinPool.commonPool-worker-11] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2015
+2022-03-18 12:49:42.640  INFO 10476 --- [ForkJoinPool.commonPool-worker-15] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2016
+2022-03-18 12:49:42.646  INFO 10476 --- [ForkJoinPool.commonPool-worker-13] c.a.p.l.startup.MarcheCommandLineRunner  : Lancement de la r�cup�ration des march�s Pridesoft pour l'ann�e 2017
+2022-03-18 12:49:42.638  INFO 10476 --- [ForkJoinPool.commonPool-worker-3] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft pour l'ann�e 2014
+2022-03-18 12:49:42.651  INFO 10476 --- [ForkJoinPool.commonPool-worker-9] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft pour l'ann�e 2015
+2022-03-18 12:49:42.651  INFO 10476 --- [ForkJoinPool.commonPool-worker-7] c.a.p.l.startup.CNECommandLineRunner     : Lancement de la r�cup�ration des bons de commande Pridesoft pour l'ann�e 2016
+2022-03-18 12:49:43.691  INFO 10476 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

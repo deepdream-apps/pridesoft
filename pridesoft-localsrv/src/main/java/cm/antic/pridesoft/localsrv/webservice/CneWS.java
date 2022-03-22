@@ -123,13 +123,13 @@ public class CneWS {
 			
 			log.info(String.format("Nombre de CNE recuperees : %s", listeCNEs.size())) ;
 			
-			List<CneRemote> listeCNEsFiltres = listeCNEs.stream()
+			List<CneRemote> listeCNEsFiltres = listeCNEs.parallelStream()
 					.filter(cneR -> {
 						return listeMotsCles.stream().anyMatch(motCle ->cneR.getObjetCommande().toLowerCase().contains(motCle)) 
 							   && cneR.getMontantTtcCommande() != null && cneR.getMontantTtcCommande().longValue() > 0L ;
 					}).collect(Collectors.toList()) ;
 			
-			return listeCNEsFiltres.stream()
+			return listeCNEsFiltres.parallelStream()
 							       .map(cneR  -> {
 							    	   String regionSelectionnee = listeRegions.stream()
 												.peek(System.out::println)

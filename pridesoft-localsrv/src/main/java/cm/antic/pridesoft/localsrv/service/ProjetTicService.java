@@ -46,7 +46,19 @@ public class ProjetTicService {
 	
 	
 	public ProjetTic modifier (ProjetTic projet) {
-		return projetTicRepository.save(projet) ;
+		ProjetTic projetTic = projetTicRepository.findByCodeProjet(projet.getCodeProjet())
+				   .orElseThrow(() -> new RuntimeException(String.format("Code projet inexistant %s", projet.getCodeProjet()))) ;
+		
+		projetTic.setIdRegion(projet.getIdRegion());
+		projetTic.setLibelleRegion(projet.getLibelleRegion());
+		projetTic.setIdSecteurActivite(projet.getIdSecteurActivite());
+		projetTic.setLibelleSecteurActivite(projet.getLibelleSecteurActivite());
+		projetTic.setIdCategorie(projet.getIdCategorie());
+		projetTic.setLibelleCategorie(projet.getLibelleCategorie());
+		projetTic.setIdSousCategorie(projet.getIdSousCategorie());
+		projetTic.setLibelleSousCategorie(projet.getLibelleSousCategorie());
+		
+		return projetTicRepository.save(projetTic) ;
 	}
 	
 	
@@ -234,7 +246,7 @@ public class ProjetTicService {
 				Double.valueOf(listeProjetsTic.size()*1.0/nombreTotal).floatValue(), 
 				Double.valueOf(montantProjetsTic*1.0/montantTotal).floatValue()))  ;
 		
-		liste.add( new NombreMontantDTO("Nombre et Montant des projets TIC au niveau de l'Administration centrale", 
+		liste.add( new NombreMontantDTO("Nombre et Montant des projets TIC dans l'Administration centrale", 
 				listeProjetsTicSC.size(), montantProjetsTicSC, 
 				Double.valueOf(listeProjetsTicSC.size()*1.0/nombreTotal).floatValue(), 
 				Double.valueOf(montantProjetsTicSC*1.0/montantTotal).floatValue()))  ;

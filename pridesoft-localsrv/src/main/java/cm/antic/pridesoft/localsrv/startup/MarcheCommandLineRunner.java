@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ import cm.antic.pridesoft.localsrv.service.ProjetService;
 import lombok.extern.log4j.Log4j2;
 @Log4j2
 @Component
-public class ProjetCommandLineRunner implements CommandLineRunner {
+public class MarcheCommandLineRunner implements CommandLineRunner {
 	@Autowired
 	private ProjetService projetService ;
 	@Autowired
@@ -41,19 +42,22 @@ public class ProjetCommandLineRunner implements CommandLineRunner {
 	
 	
     public void run(String...args) throws Exception {
-        log.info(String.format("Lancement de la récupération des projets Pridesoft %s", LocalDateTime.now()));
-         
-        ScheduledExecutorService   executorService = Executors.newScheduledThreadPool(2) ;
+        log.info(String.format("Lancement de la récupération des marchés Pridesoft %s", LocalDateTime.now())) ;
+        ScheduledExecutorService   executorService = Executors.newSingleThreadScheduledExecutor() ;
         executorService.scheduleWithFixedDelay(() -> {
-        	CompletableFuture.supplyAsync(this::telechargerProjets)
-            				 .thenAccept(this::enregisterProjetsTic) ;
-        }, 0, 24L, TimeUnit.HOURS) ;
+        	IntStream.rangeClosed(Integer.valueOf(env.getProperty("app.localsrv.recuperation_projets.annee_depart")), LocalDate.now().getYear())
+        	         .forEach((year)  -> {
+        	        	 CompletableFuture.supplyAsync(() -> this.telechargerMarchesTic (year))
+        				 				  .thenAccept(this::enregisterMarchesTic) ;
+        	         }) ;
+        }, 0, Long.valueOf(env.getProperty("app.localsrv.recuperation_projets.periodicite")), TimeUnit.HOURS) ;
         
     }
+     
     
-    private List<ProjetRemote> telechargerProjets (){
-    	
-    	Integer year = LocalDate.now().getYear() ;
+    
+    private List<ProjetRemote> telechargerMarchesTic (int year){
+    	log.info(String.format("Lancement de la récupération des marchés Pridesoft pour l'année %s", year));
     	LocalDate dateDebut = LocalDate.of(year, Month.JANUARY, 1) ;
     	LocalDate dateFin = LocalDate.of(year, Month.DECEMBER, 31) ;
     	
@@ -72,14 +76,18 @@ public class ProjetCommandLineRunner implements CommandLineRunner {
 			return listeProjetsRemote.stream()
 				.filter(projet -> {
 					return listeMotsCles.parallelStream().anyMatch(motCle -> projet.getDesignation().toLowerCase().contains(motCle)) ;
-				}).collect(Collectors.toList()) ;
+				}).collect(Collectors.toList()) ;	
 		}catch(IOException ex) {
+			log.info(String.format("Erreur survenue lors de la récupération  des marchés Pridesoft pour l'année %s", year));
 			return new ArrayList<ProjetRemote>() ;
 		}
     }
     
     
-   private Long enregisterProjetsTic (List<ProjetRemote> listeProjetsRemote){
+   private Long enregisterMarchesTic (List<ProjetRemote> listeProjetsRemote){
+	   
+	   log.info(String.format("Lancement de l'enregistrement des marchés récupérés %s", listeProjetsRemote.size()));
+	   
 	   return listeProjetsRemote.parallelStream()
 			   		.map(projetR  -> {
 			   				Projet projet = Projet.builder()

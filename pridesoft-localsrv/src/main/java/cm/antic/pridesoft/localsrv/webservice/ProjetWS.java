@@ -122,7 +122,7 @@ public class ProjetWS {
 			
 			log.info(String.format("Nombre de projets recuperees : %s", listeProjets.size())) ;
 			
-			List<ProjetRemote> listeProjetsFiltres = listeProjets.stream()
+			List<ProjetRemote> listeProjetsFiltres = listeProjets.parallelStream()
 					.filter(projet -> {
 						return listeMotsCles.parallelStream().anyMatch(motCle -> projet.getDesignation().toLowerCase().contains(motCle)) ;
 					}).collect(Collectors.toList()) ;

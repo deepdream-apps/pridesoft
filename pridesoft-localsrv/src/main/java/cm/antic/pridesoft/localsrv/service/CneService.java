@@ -44,8 +44,10 @@ public class CneService {
 		projetTic.setType(TypeProjet.BONDECOMMANDE.getLibelle()) ;
 		projetTic.setDateSignature(cne.getDateSignature()) ;
 		projetTic.setMontant(cne.getMontant()) ;
-		projetTic.setIdRegion(cne.getIdRegion()) ;
-		projetTic.setLibelleRegion(cne.getLibelleRegion()) ;
+		
+		projetTic.setIdRegion(projetTic.getIdRegion() != null ? projetTic.getIdRegion() : cne.getIdRegion()) ;
+		projetTic.setLibelleRegion(projetTic.getLibelleRegion() != null ? projetTic.getLibelleRegion() : cne.getLibelleRegion()) ;
+		
 		projetTic.setIdMaitreOuvrage(cne.getIdMaitreOuvrage()) ;
 		projetTic.setLibelleMaitreOuvrage(cne.getLibelleMaitreOuvrage()) ;
 

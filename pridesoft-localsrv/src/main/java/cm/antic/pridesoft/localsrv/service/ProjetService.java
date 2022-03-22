@@ -48,8 +48,10 @@ public class ProjetService {
 		projetTic.setType(TypeProjet.MARCHE.getLibelle()) ;
 		projetTic.setDateSignature(projet.getDateSignature()) ;
 		projetTic.setMontant(projet.getMontant()) ;
-		projetTic.setIdRegion(String.valueOf(projet.getIdRegion())) ;
-		projetTic.setLibelleRegion(projet.getLibelleRegion()) ;
+		
+		projetTic.setIdRegion(projetTic.getIdRegion() != null ? projetTic.getIdRegion() : String.valueOf(projet.getIdRegion())) ;
+		projetTic.setLibelleRegion(projetTic.getIdRegion() != null ? projetTic.getLibelleRegion() : projet.getLibelleRegion()) ;
+		
 		projetTic.setIdMaitreOuvrage(String.valueOf(projet.getIdMaitreOuvrage())) ;
 		projetTic.setLibelleMaitreOuvrage(projet.getLibelleMaitreOuvrage()) ;
 		
